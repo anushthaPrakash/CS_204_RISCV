@@ -10,8 +10,10 @@ static unsigned int operand2;
 char Type = '0';
 static bitset<M> inst;
 static unsigned int des_reg;
+static int des_res;
 string subtype;
-static int Imm;
+static int imm;
+static int  pc = 0;
 
 // checking the instruction set
 char op_R_type(bitset<7> op)
@@ -137,8 +139,8 @@ void load_program_memory()
 // reads from the instruction memory and updates the instruction register
 void fetch()
 {
-  inst = MEM[0];
-  // cout<<inst;
+  inst = MEM[pc];
+  cout<<inst;
 }
 // reads the instruction register, reads operand1, operand2 fromo register file, decides the operation to be performed in execute stage
 void decode()
@@ -212,14 +214,62 @@ void decode()
       j++;
     }
     des_reg = rd.to_ulong();
-  }
-  case 
+  } 
   }
 }
 // executes the ALU operation based on ALUop
 void execute()
 {
+    if(Type == 'R'){ //add, and, or, sll, slt, sra, srl, sub, xor
+    if(subtype == "add")  des_res = X[operand1] + X[operand2];
+    else if(subtype == "sub") des_res = X[operand1] - X[operand2];
+    else if(subtype == "and") des_res = X[operand1] & X[operand2];
+    else if(subtype == "or")  des_res = X[operand1] | X[operand2];
+    else if(subtype == "sll") des_res = X[operand1] << X[operand2];
+    else if(subtype == "slt") des_res = (X[operand1] < X[operand2])?1:0;
+    else if(subtype == "sra") des_res = X[operand1] << X[operand2];
+    else if(subtype == "xor") des_res = X[operand1] ^ X[operand2];
+    else if(subtype == "srl") des_res = X[operand1] << X[operand2];
+  }
+  else if(Type == 'I'){ //addi, andi, ori, lb, lh, lw, jalr
+    if(subtype == "addi") des_res = X[operand1]+imm; 
+    else if(subtype == "andi") des_res = X[operand1]&imm; 
+    else if(subtype == "ori") des_res = X[operand1]|imm; 
+    else if(subtype == "lb" || subtype == "lh" || subtype == "lw") des_res = X[operand1]+imm; 
+    else if(subtype == "jalr") {des_res =pc + 4; pc = X[operand1]+imm;} 
+  }
+  else if(Type == 'B'){//beq, bne, bge, blt
+    if(subtype == "beq") if(X[operand1] == X[operand2]) pc += imm;
+    else if(subtype == "bne") if(X[operand1] != X[operand2]) pc += imm;
+    else if(subtype == "bge") if(X[operand1] >= X[operand2]) pc += imm;
+    else if(subtype == "blt") if(X[operand1] < X[operand2]) pc += imm;
+  }
+  else if(Type == 'J'){//jal
+    des_res = pc+4; pc += imm;
+  }
+  else if(Type == 'S'){//sb, sw, sh
+    X[operand2] = X[operand1]+imm;
+  }
+  else if(Type == 'U'){//auipc, lui
+    if(subtype == "auipc") des_res = pc + (imm<<12) ;
+    else if(subtype == "lui") des_res = imm<<12;
+  }
 }
+// perform the memory operation
+void mem()
+{
+}
+// writes the results back to register file
+void write_back()
+{
+}
+
+// should be called when instruction is swi_exit
+//  void swi_exit() {
+//    write_data_memory();
+//    exit(0);
+//  }
+
 // perform the memory operation
 void mem()
 {
@@ -239,85 +289,6 @@ void run_riscvsim()
 {
   while (1)
   {
-    // bitset<M> bset;
-//reads from the instruction memory and updates the instruction register
-void fetch() {
-  inst = MEM[pc];
-  cout<<inst;
-}
-//reads the instruction register, reads operand1, operand2 fromo register file, decides the operation to be performed in execute stage
-void decode() {
-  bitset<7> op,func3,func7,op1,op2;
-  for(int i =0 ;i<7; i++){
-    op[i] = inst[i];
-  }
-  cout<<"\n"<<op;
-  char s = '0';
-  while(1){
-    if(s == '0') {s = op_R_type(op);}
-    if(s == '0') s = op_I_type(op);
-    if(s == '0') s = op_J_type(op);
-    if(s == '0') s = op_B_type(op);
-    if(s == '0') s = op_S_type(op);
-    if(s == '0') s = op_U_type(op);
-    break;
-  }
-  cout<<"\n"<<s;
-}
-
-//executes the ALU operation based on ALUop
-void execute() {
-  if(type == 'R'){ //add, and, or, sll, slt, sra, srl, sub, xor
-    if(subtype == "add")  des_res = X[operand1] + X[operand2];
-    else if(subtype == "sub") des_res = X[operand1] - X[operand2];
-    else if(subtype == "and") des_res = X[operand1] & X[operand2];
-    else if(subtype == "or")  des_res = X[operand1] | X[operand2];
-    else if(subtype == "sll") des_res = X[operand1] << X[operand2];
-    else if(subtype == "slt") des_res = (X[operand1] < X[operand2])?1:0;
-    else if(subtype == "sra") des_res = X[operand1] << X[operand2];
-    else if(subtype == "xor") des_res = X[operand1] ^ X[operand2];
-    else if(subtype == "srl") des_res = X[operand1] << X[operand2];
-  }
-  else if(type == 'I'){ //addi, andi, ori, lb, lh, lw, jalr
-    if(subtype == "addi") des_res = X[oprand1]+imm; 
-    else if(subtype == "andi") des_res = X[oprand1]&imm; 
-    else if(subtype == "ori") des_res = X[oprand1]|imm; 
-    else if(subtype == "lb" || subtype == "lh" || subtype == "lw") des_res = X[oprand1]+imm; 
-    else if(subtype == "jalr") {des_res =pc + 4; pc = X[oprand1]+imm;} 
-  }
-  else if(type == 'B'){//beq, bne, bge, blt
-    if(subtype == "beq") if(X[oprand1] == X[oprand2]) pc += imm;
-    else if(subtype == "bne") if(X[oprand1] != X[oprand2]) pc += imm;
-    else if(subtype == "bge") if(X[oprand1] >= X[oprand2]) pc += imm;
-    else if(subtype == "blt") if(X[oprand1] < X[oprand2]) pc += imm;
-  }
-  else if(type == 'J'){//jal
-    des_res = pc+4; pc += imm;
-  }
-  else if(type == 'S'){//sb, sw, sh
-    X[operand2] = X[operand1]+imm;
-  }
-  else if(type == 'U'){//auipc, lui
-    if(subtype == "auipc") des_res = pc + (imm<<12) ;
-    else if(subtype == "lui") des_res = imm<<12;
-  }
-}
-//perform the memory operation
-void mem() {
-}
-//writes the results back to register file
-void write_back() {
-}
-
-//should be called when instruction is swi_exit
-// void swi_exit() {
-//   write_data_memory();
-//   exit(0);
-// }
-
-
-void run_riscvsim() {
-  while(1) {
     fetch();
     decode();
     // execute();
