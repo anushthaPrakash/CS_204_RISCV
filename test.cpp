@@ -19,7 +19,11 @@ static int  pc = 0;
 // should the instuction memory be in byte format
 // like the first 8 bits(1 byte) of instruction in index 0 of MEM then next 8 bits in MEM[1] so that a single instruction will be 32 bits and will take
 // MEM[0]-MEM[3] , then next instruction will me from MEM[4] so the pc will be adjusted to move 4 at one time 
-// like when they give recursion type code we have to teke in mind that the space there while craeting stack is  
+// like when they give recursion type code we have to keep in mind that the space there while craeting stack is sp-4 i.e handle the recursion 
+
+// does this handle the msb extension and arithmetic and logical sign extension?
+// In provided RISCV refernce card immediate value bit is not correct in U type instruction?
+// test >> with Arithmatic shift and logical shift
 
 // checking the instruction set
 char op_R_type(bitset<7> op)
@@ -241,6 +245,9 @@ void decode()
       j++;
     }
     imm = immb.to_ulong();
+    if(immb[11]==1){
+      imm = -1*imm;
+    }
 
   }
   case 'S':{
@@ -257,17 +264,95 @@ void decode()
       j++;
     }
     imm = immb.to_ulong();
+    if(immb[11]==1){
+      imm = -1*imm;
+    }
 
   }
   case 'B':{
-    bitset<12> immb;
+    bitset<13> immb;
      j=0;
-    for (int i = 7; i < 12; i++)
+     immb[0]=0;
+    for (int i = 8; i < 12; i++)
     {
       immb[j] = inst[i];
       j++;
     }
+    for (int i = 25; i < 31; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+    immb[j]=inst[7];
+    j++;
+    immb[j]= inst[31];
+    imm = immb.to_ulong();
+    if(immb[12]==1){
+      imm = -1*imm;
+    }
   }
+  case 'U':{
+        j = 0;
+    for (int i = 7; i < 12; i++)
+    {
+      rd[j] = inst[i];
+      j++;
+    }
+    des_reg = rd.to_ulong();
+    // bitset<32> immb;
+    // for (int j = 0; j < 12; j++)
+    // {
+    //   immb[j] = 0;
+    // }
+    // for (int i = 12; i < 32; i++)
+    // {
+    //   immb[j] = inst[i];
+    //   j++;
+    // }
+    // imm = immb.to_ulong();
+    // if(immb[31]==1){
+    //   imm = -1*imm;
+    // }
+    bitset<20> immb;
+    j=0;
+    for (int i = 12; i < 32; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+    imm = immb.to_ulong();
+    if(immb[19]==1){
+      imm = -1*imm;
+    }
+     }
+  case 'J':{
+    j=0;
+    bitset<21> immb;
+    j=0;
+    immb[0]=0;
+    j=12;
+     for (int i = 12; i < 20; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+    immb[11]=inst[20];
+    j=1;
+     for (int i = 21; i < 31; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+    immb[20]=inst[31];
+     imm = immb.to_ulong();
+    if(immb[20]==1){
+      imm = -1*imm;
+    }
+  }
+  default:{
+    cout<<"error"<<endl;
+  }
+   
 
   }
 }
@@ -312,6 +397,7 @@ void execute()
 // perform the memory operation
 void mem()
 {
+  
 }
 // writes the results back to register file
 void write_back()
