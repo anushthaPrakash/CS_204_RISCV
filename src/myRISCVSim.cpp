@@ -45,12 +45,6 @@ void run_riscvsim() {
 // it is used to set the reset values
 //reset all registers and memory content to 0
 void reset_proc() {
-for(auto i : X){
-  i = 0;
-}
-for(auto p : MEM){
-  p = 0;
-}
 }
 
 //load_program_memory reads the input memory, and pupulates the instruction 

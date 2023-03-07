@@ -3,7 +3,8 @@ using namespace std;
 
 #define M 32
 static unsigned int X[32];
-static unsigned int MEM[4000];
+static unsigned int MEM[4000];//only 4000?
+static int DMEM[4000];
 static unsigned int instruction_word;
 static unsigned int operand1;
 static unsigned int operand2;
@@ -14,6 +15,11 @@ static int des_res;
 string subtype;
 static int imm;
 static int  pc = 0;
+// -----------DOUBT------------
+// should the instuction memory be in byte format
+// like the first 8 bits(1 byte) of instruction in index 0 of MEM then next 8 bits in MEM[1] so that a single instruction will be 32 bits and will take
+// MEM[0]-MEM[3] , then next instruction will me from MEM[4] so the pc will be adjusted to move 4 at one time 
+// like when they give recursion type code we have to teke in mind that the space there while craeting stack is  
 
 // checking the instruction set
 char op_R_type(bitset<7> op)
@@ -141,6 +147,10 @@ void fetch()
 {
   inst = MEM[pc];
   cout<<inst;
+  bitset<32> exitcode("11101111000000000000000000010001");
+  if(inst == exitcode ){
+    swi_exit();
+  }
 }
 // reads the instruction register, reads operand1, operand2 fromo register file, decides the operation to be performed in execute stage
 void decode()
@@ -173,15 +183,10 @@ void decode()
       Type = op_U_type(op);
     break;
   }
-  cout << "\n"
-       << Type;
+  cout<< Type<<endl;
   // cout<<inst<<endl;
-  cout << operand1 << "  " << des_reg << endl;
-  switch (Type)
-  {
-  case 'R':
-  {
-    int j = 0;
+  // cout << operand1 << "  " << des_reg << endl;
+      int j = 0;
     for (int i = 25; i < 32; i++)
     {
       func7[j] = inst[i];
@@ -207,6 +212,11 @@ void decode()
       j++;
     }
     operand2 = rs2.to_ulong();
+  switch (Type)
+  {
+  case 'R':
+  {
+
     j = 0;
     for (int i = 7; i < 12; i++)
     {
@@ -215,6 +225,50 @@ void decode()
     }
     des_reg = rd.to_ulong();
   } 
+  case 'I':{
+    bitset<12> immb;
+     j = 0;
+    for (int i = 7; i < 12; i++)
+    {
+      rd[j] = inst[i];
+      j++;
+    }
+    des_reg = rd.to_ulong();
+    j=0;
+    for (int i = 20; i < 32; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+    imm = immb.to_ulong();
+
+  }
+  case 'S':{
+    bitset<12> immb;
+     j=0;
+    for (int i = 7; i < 12; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+    for (int i = 25; i < 32; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+    imm = immb.to_ulong();
+
+  }
+  case 'B':{
+    bitset<12> immb;
+     j=0;
+    for (int i = 7; i < 12; i++)
+    {
+      immb[j] = inst[i];
+      j++;
+    }
+  }
+
   }
 }
 // executes the ALU operation based on ALUop
@@ -265,25 +319,10 @@ void write_back()
 }
 
 // should be called when instruction is swi_exit
-//  void swi_exit() {
-//    write_data_memory();
-//    exit(0);
-//  }
-
-// perform the memory operation
-void mem()
-{
-}
-// writes the results back to register file
-void write_back()
-{
-}
-
-// should be called when instruction is swi_exit
-//  void swi_exit() {
-//    write_data_memory();
-//    exit(0);
-//  }
+ void swi_exit() {
+   write_data_memory();
+   exit(0);
+ }
 
 void run_riscvsim()
 {
