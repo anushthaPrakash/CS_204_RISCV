@@ -24,7 +24,7 @@ using namespace std;
 static unsigned int X[32];
 //flags
 //memory
-static unsigned char MEM[4000];
+static char MEM[4000]; //unsigned was here but removed
 
 //intermediate datapath and control path signals
 static unsigned int instruction_word;
