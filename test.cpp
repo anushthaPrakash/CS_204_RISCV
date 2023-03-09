@@ -78,9 +78,111 @@ char op_U_type(bitset<7> op)
     return '0';
 }
 // end checking
-string subtype_select(bitset<5> func3, bitset<5> func7, char Type)
+string subtype_select(bitset<3> func3, bitset<7> func7,bitset<7> op)
 {
+  string Func3=func3.to_string(),Func7=func7.to_string(),Op = op.to_string();
+  switch(Type){
+    case 'R':{
+      if(Func3=="000" && Func7 =="0000000"){
+        subtype="add";
+      }
+      else if(Func3=="111" && Func7 =="0000000"){
+        subtype= "and";
+      }
+      else if(Func3=="110" && Func7 =="0000000"){
+        subtype= "or";
+      }
+      else if(Func3=="001" && Func7 =="0000000"){
+        subtype= "sll";
+      }
+      else if(Func3=="010" && Func7 =="0000000"){
+        subtype= "slt";
+      }
+      else if(Func3=="101" && Func7 =="0100000"){
+        subtype= "sra";
+      }
+      else if(Func3=="101" && Func7 =="0000000"){
+        subtype= "srl";
+      }
+      else if(Func3=="000" && Func7 =="0100000"){
+        subtype= "sub";
+      }
+      else if(Func3=="100" && Func7 =="0000000"){
+        subtype= "xor";
+      }
+      break;
+    }
+    case 'I':{
+      if(Func3=="000"&& Op =="0010011" ){
+        subtype="addi";
+      }
+      else if(Func3=="111" ){
+        subtype="andi";
+      }
+      else if(Func3=="110" ){
+        subtype="ori";
+      }
+      else if(Func3=="000" && Op =="0000011" ){
+        subtype="lb";
+      }
+      else if(Func3=="001" ){
+        subtype="lh";
+      }
+      else if(Func3=="010" ){
+        subtype="lw";
+      }
+      else if(Func3=="000" && Op =="0010111" ){
+        subtype="jalr";
+      }
+      
+      break;
+    }
+    case 'B':{
+      if(Func3=="000" ){
+        subtype="beq";
+      }
+      else if(Func3=="001" ){
+        subtype="bne";
+      }
+      else if(Func3=="101" ){
+        subtype="bge";
+      }
+      else if(Func3=="100"  ){
+        subtype="blt";
+      }
+      break;
+    }
+    case 'J':{
   
+        subtype="jal";
+      break;
+    }
+    case 'S':{
+      if(Func3=="000" ){
+        subtype="sb";
+      }
+      else if(Func3=="001" ){
+        subtype="sh";
+      }
+      else if(Func3=="010" ){
+        subtype="sw";
+      }
+      break;
+    }
+    case 'U':{
+      if(Op =="0010111" ){
+        subtype="auipc";
+      }
+      else if(Op =="0110111" ){
+        subtype="lui";
+      }
+      break;
+    }
+    default:{
+      cout<<"error"<<endl;
+    }
+  }
+
 }
 void swi_exit() {
    write_data_memory();
@@ -131,7 +233,7 @@ void write_data_memory()
     return;
   }
 
-  for (i = 0; i <= 12; i = i + 4)
+  for (i = 0; i <= 16; i = i + 4)
   {
     fprintf(fp, "%u %u\n", i, read_word(MEM, i));
   }
@@ -239,6 +341,7 @@ void decode()
       j++;
     }
     des_reg = rd.to_ulong();
+    break;
   } 
   case 'I':{
     bitset<12> immb;
@@ -259,6 +362,7 @@ void decode()
     if(immb[11]==1){
       imm = -1*imm;
     }
+    break;
 
   }
   case 'S':{
@@ -278,6 +382,7 @@ void decode()
     if(immb[11]==1){
       imm = -1*imm;
     }
+    break;
 
   }
   case 'B':{
@@ -301,6 +406,7 @@ void decode()
     if(immb[12]==1){
       imm = -1*imm;
     }
+    break;
   }
   case 'U':{
         j = 0;
@@ -336,7 +442,8 @@ void decode()
     if(immb[19]==1){
       imm = -1*imm;
     }
-     }
+    break;
+  }
   case 'J':{
     j=0;
     bitset<21> immb;
@@ -360,6 +467,7 @@ void decode()
     if(immb[20]==1){
       imm = -1*imm;
     }
+    break;
   }
   default:{
     cout<<"error"<<endl;
@@ -367,11 +475,12 @@ void decode()
    
 
   }
+  subtype_select(func3,func7,op);
 }
 // executes the ALU operation based on ALUop
 void execute()
 {
-    if(Type == 'R'){ //add, and, or, sll, slt, sra, srl, sub, xor
+  if(Type == 'R'){ //add, and, or, sll, slt, sra, srl, sub, xor
     if(subtype == "add")  des_res = X[operand1] + X[operand2];
     else if(subtype == "sub") des_res = X[operand1] - X[operand2];
     else if(subtype == "and") des_res = X[operand1] & X[operand2];
@@ -381,6 +490,7 @@ void execute()
     else if(subtype == "sra") des_res = X[operand1] << X[operand2];
     else if(subtype == "xor") des_res = X[operand1] ^ X[operand2];
     else if(subtype == "srl") des_res = X[operand1] << X[operand2];
+    pc=pc+4;
   }
   else if(Type == 'I'){ //addi, andi, ori, lb, lh, lw, jalr
     if(subtype == "addi") des_res = X[operand1]+imm; 
@@ -388,6 +498,9 @@ void execute()
     else if(subtype == "ori") des_res = X[operand1]|imm; 
     else if(subtype == "lb" || subtype == "lh" || subtype == "lw") des_res = X[operand1]+imm; 
     else if(subtype == "jalr") {des_res =pc + 4; pc = X[operand1]+imm;} 
+    if(subtype != "jalr"){
+      pc=pc+4;
+    }
   }
   else if(Type == 'B'){//beq, bne, bge, blt
     if(subtype == "beq") if(X[operand1] == X[operand2]) pc += imm;
@@ -400,20 +513,30 @@ void execute()
   }
   else if(Type == 'S'){//sb, sw, sh
     X[operand2] = X[operand1]+imm;
+    pc=pc+4;
   }
   else if(Type == 'U'){//auipc, lui
-    if(subtype == "auipc") des_res = pc + (imm<<12) ;
-    else if(subtype == "lui") des_res = imm<<12;
+    if(subtype == "auipc"){ des_res = pc + (imm<<12) ;}
+    else if(subtype == "lui"){ des_res = imm<<12;}
+    pc=pc+4;
   }
 }
 // perform the memory operation
 void mem()
 {
+  if(subtype == "lw"){
+    des_res = DMEM[des_res];
+  }
+  else if(subtype == "sw"){
+    DMEM[des_res] = X[operand2];
+  }
+
   
 }
 // writes the results back to register file
 void write_back()
 {
+  if(Type != 'S' || subtype != "jal" || Type != 'B') X[des_reg] = des_res;
 }
 
 // should be called when instruction is swi_exit
@@ -425,10 +548,10 @@ void run_riscvsim()
   {
     fetch();
     decode();
-    // execute();
+    execute();
     // mem();
     // write_back();
-    break;
+    // break;
   }
 }
 
