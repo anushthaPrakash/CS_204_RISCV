@@ -2,6 +2,7 @@
 using namespace std;
 
 #define M 32
+void write_data_memory();
 static unsigned int X[32];
 static unsigned int MEM[4000];//only 4000?
 static int DMEM[4000];
@@ -37,7 +38,7 @@ char op_R_type(bitset<7> op)
 char op_I_type(bitset<7> op)
 {
   bitset<7> opi1("0010011");
-  bitset<7> opi2("0000011");
+  bitset<7> opi2("1100111");
   if (op == opi1 || op == opi2)
     return 'I';
   else
@@ -79,7 +80,12 @@ char op_U_type(bitset<7> op)
 // end checking
 string subtype_select(bitset<5> func3, bitset<5> func7, char Type)
 {
+  
 }
+void swi_exit() {
+   write_data_memory();
+   exit(0);
+ }
 
 void reset_proc()
 {
@@ -87,9 +93,14 @@ void reset_proc()
   {
     i = 0;
   }
+  X[2]=3999;
   for (auto p : MEM)
   {
     p = 0;
+  }
+  for (auto q : DMEM)
+  {
+    q = 0;
   }
 }
 
@@ -150,7 +161,7 @@ void load_program_memory()
 void fetch()
 {
   inst = MEM[pc];
-  cout<<inst;
+  cout<<inst<<endl;
   bitset<32> exitcode("11101111000000000000000000010001");
   if(inst == exitcode ){
     swi_exit();
@@ -187,7 +198,7 @@ void decode()
       Type = op_U_type(op);
     break;
   }
-  cout<< Type<<endl;
+  // cout<< Type<<endl;
   // cout<<inst<<endl;
   // cout << operand1 << "  " << des_reg << endl;
       int j = 0;
@@ -320,6 +331,7 @@ void decode()
       immb[j] = inst[i];
       j++;
     }
+    cout<<immb<<endl;
     imm = immb.to_ulong();
     if(immb[19]==1){
       imm = -1*imm;
@@ -405,10 +417,7 @@ void write_back()
 }
 
 // should be called when instruction is swi_exit
- void swi_exit() {
-   write_data_memory();
-   exit(0);
- }
+
 
 void run_riscvsim()
 {
