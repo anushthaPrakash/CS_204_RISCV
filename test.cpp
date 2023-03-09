@@ -549,8 +549,8 @@ void run_riscvsim()
     fetch();
     decode();
     execute();
-    // mem();
-    // write_back();
+    mem();
+    write_back();
     // break;
   }
 }
