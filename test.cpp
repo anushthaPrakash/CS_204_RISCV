@@ -16,6 +16,8 @@ static int des_res;
 string subtype;
 static int imm;
 static int  pc = 0;
+unsigned int sz = 0;
+// 0x14 0xFE32CCE3
 // -----------DOUBT------------
 // should the instuction memory be in byte format
 // like the first 8 bits(1 byte) of instruction in index 0 of MEM then next 8 bits in MEM[1] so that a single instruction will be 32 bits and will take
@@ -200,12 +202,8 @@ void reset_proc()
   {
     p = 0;
   }
-  for (auto q : DMEM)
-  {
-    q = 0;
-  }
+  for (auto q : DMEM)  q = 0;
 }
-
 // read and write in file start
 int read_word(unsigned int *mem, unsigned int address)
 {
@@ -213,15 +211,14 @@ int read_word(unsigned int *mem, unsigned int address)
   data = (int *)(mem + address);
   return *data;
 }
-
 void write_word(unsigned int *mem, unsigned int address, unsigned int data)
 {
   int *data_p;
   data_p = (int *)(mem + address);
   *data_p = data;
+  sz++;
 }
 // read and write ends
-
 void write_data_memory()
 {
   FILE *fp;
@@ -229,14 +226,9 @@ void write_data_memory()
   fp = fopen("data_out.mem", "w");
   if (fp == NULL)
   {
-    printf("Error opening dataout.mem file for writing\n");
-    return;
+    printf("Error opening dataout.mem file for writing\n"); return;
   }
-
-  for (i = 0; i <= 16; i = i + 4)
-  {
-    fprintf(fp, "%u %u\n", i, read_word(MEM, i));
-  }
+  for (i = 0; i <= sz; i = i + 4) fprintf(fp, "%u %u\n", i, read_word(MEM, i));
   fclose(fp);
 }
 
@@ -268,6 +260,7 @@ void fetch()
   if(inst == exitcode ){
     swi_exit();
   }
+
 }
 // reads the instruction register, reads operand1, operand2 fromo register file, decides the operation to be performed in execute stage
 void decode()
@@ -281,7 +274,7 @@ void decode()
   {
     op[i] = inst[i];
   }
-  // cout<<op<<endl;
+  cout<<op<<endl;
   while (1)
   {
     if (Type == '0')
@@ -300,9 +293,8 @@ void decode()
       Type = op_U_type(op);
     break;
   }
-  // cout<< Type<<endl;
+  cout<< Type<<endl;
   // cout<<inst<<endl;
-  // cout << operand1 << "  " << des_reg << endl;
       int j = 0;
     for (int i = 25; i < 32; i++)
     {
@@ -312,14 +304,12 @@ void decode()
     j = 0;
     for (int i = 12; i < 15; i++)
     {
-      func3[j] = inst[i];
-      j++;
+      func3[j] = inst[i]; j++;
     }
     j = 0;
     for (int i = 15; i < 20; i++)
     {
-      rs1[j] = inst[i];
-      j++;
+      rs1[j] = inst[i]; j++;
     }
     operand1 = rs1.to_ulong();
     j = 0;
@@ -341,7 +331,9 @@ void decode()
       j++;
     }
     des_reg = rd.to_ulong();
+    cout << des_reg << endl; 
     break;
+   
   } 
   case 'I':{
     bitset<12> immb;
@@ -362,6 +354,7 @@ void decode()
     if(immb[11]==1){
       imm = -1*imm;
     }
+    cout << imm << " "<< operand1<<" "<< des_reg<< endl; 
     break;
 
   }
@@ -387,8 +380,9 @@ void decode()
   }
   case 'B':{
     bitset<13> immb;
-     j=0;
+     
      immb[0]=0;
+    j=1;
     for (int i = 8; i < 12; i++)
     {
       immb[j] = inst[i];
@@ -406,6 +400,7 @@ void decode()
     if(immb[12]==1){
       imm = -1*imm;
     }
+    cout<<imm<<endl;
     break;
   }
   case 'U':{
@@ -470,10 +465,7 @@ void decode()
     break;
   }
   default:{
-    cout<<"error"<<endl;
-  }
-   
-
+    cout<<"error"<<endl;}
   }
   subtype_select(func3,func7,op);
 }
@@ -501,12 +493,13 @@ void execute()
     if(subtype != "jalr"){
       pc=pc+4;
     }
+    cout<<des_res<<endl;
   }
   else if(Type == 'B'){//beq, bne, bge, blt
-    if(subtype == "beq") if(X[operand1] == X[operand2]) pc += imm;
-    else if(subtype == "bne") if(X[operand1] != X[operand2]) pc += imm;
-    else if(subtype == "bge") if(X[operand1] >= X[operand2]) pc += imm;
-    else if(subtype == "blt") if(X[operand1] < X[operand2]) pc += imm;
+    if(subtype == "beq"){ if(X[operand1] == X[operand2]) pc += imm;else pc += 4;}
+    else if(subtype == "bne") {if(X[operand1] != X[operand2]) pc += imm;else pc += 4;}
+    else if(subtype == "bge") {if(X[operand1] >= X[operand2]) pc += imm;else pc += 4;}
+    else if(subtype == "blt") {if(X[operand1] < X[operand2]) pc += imm;else pc += 4;}
   }
   else if(Type == 'J'){//jal
     des_res = pc+4; pc += imm;
@@ -537,11 +530,11 @@ void mem()
 void write_back()
 {
   if(Type != 'S' || subtype != "jal" || Type != 'B') X[des_reg] = des_res;
+  cout<< X[des_reg]<<endl;
+  Type = '0';
+  cout<<pc<<endl;
 }
-
 // should be called when instruction is swi_exit
-
-
 void run_riscvsim()
 {
   while (1)
@@ -563,5 +556,6 @@ int main()
   load_program_memory();
   // run the simulator
   run_riscvsim();
+  cout<<X[1]<<endl;
   return 0;
 }
