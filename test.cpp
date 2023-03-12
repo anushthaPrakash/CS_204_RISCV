@@ -34,7 +34,7 @@ char op_I_type(bitset<7> op)
   bitset<7> opi2("1100111");
   bitset<7> opi3("0000011");
 
-  if (op == opi1 || op == opi2|| op == opi3)
+  if (op == opi1 || op == opi2 || op == opi3)
     return 'I';
   else
     return '0';
@@ -212,12 +212,13 @@ void reset_proc()
   {
     i = 0;
   }
-  X[2]=999999;
+  X[2] = 999999;
   for (auto p : MEM)
   {
     p = 0;
   }
-  for (auto q : DMEM)  q = 0;
+  for (auto q : DMEM)
+    q = 0;
 }
 // read and write in file start
 int read_word(unsigned int *mem, unsigned int address)
@@ -276,7 +277,6 @@ void fetch()
   if(inst == exitcode ){
     swi_exit();
   }
-
 }
 // reads the instruction register, reads operand1, operand2 fromo register file, decides the operation to be performed in execute stage
 void decode()
@@ -353,12 +353,12 @@ void decode()
     cout<<"Operand1 : "<< operand1 <<", " <<"Operand2 : "<< operand2<<", "<<"RD : "<< des_reg<< endl;
     // cout << des_reg << endl; 
     break;
-   
-  } 
-  case 'I':{
+  }
+  case 'I':
+  {
     bitset<12> immb;
-     j = 0;
-      bool isneg = false;
+    j = 0;
+    bool isneg = false;
     for (int i = 7; i < 12; i++)
     {
       rd[j] = inst[i];
@@ -383,14 +383,15 @@ void decode()
     immb = opl;
     }
     imm = immb.to_ulong();
-    if(isneg){
-      imm = -1*imm;
+    if (isneg)
+    {
+      imm = -1 * imm;
     }
     cout<<"immediate : "<< imm<<", " <<"Operand1 : "<< operand1<<", "<<"RD : "<< des_reg<< endl; 
     break;
-
   }
-  case 'S':{
+  case 'S':
+  {
     bitset<12> immb;
       bool isneg = false;
      j=0;
@@ -420,25 +421,27 @@ void decode()
     }
     cout<<"immediate : "<< imm<<", " <<"Operand1 : "<< operand1<<", "<<"operand2 : "<< operand2<< endl; 
     break;
-
   }
-  case 'B':{
+  case 'B':
+  {
     bitset<13> immb;
     bool isneg = false;
-     
-     immb[0]=0;
-    j=1;
+
+    immb[0] = 0;
+    j = 1;
     for (int i = 8; i < 12; i++)
     {
       immb[j] = inst[i];
       j++;
     }
+
     for (int i = 25; i < 31; i++)
     {
       immb[j] = inst[i];
       j++;
     }
-    immb[j]=inst[7];
+        
+    immb[j] = inst[7];
     j++;
     immb[j]= inst[31];
     // Sign extension of the immediate 
@@ -516,9 +519,11 @@ void decode()
     bitset<21> opl(s);
     immb = opl;
     }
+    cout << immb << endl;
     imm = immb.to_ulong();
-    if(isneg){
-      imm = -1*imm;
+    if (isneg)
+    {
+      imm = -1 * imm;
     }
     j = 0;
     for (int i = 7; i < 12; i++)
@@ -530,10 +535,12 @@ void decode()
     cout<<"immediate : "<< imm<<", "<<"RD : "<< des_reg<< endl; 
     break;
   }
-  default:{
-    cout<<"error"<<endl;}
+  default:
+  {
+    cout << "error" << endl;
   }
-  subtype_select(func3,func7,op);
+  }
+  subtype_select(func3, func7, op);
 }
 // executes the ALU operation based on ALUop
 void execute()
