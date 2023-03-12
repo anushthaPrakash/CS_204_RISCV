@@ -16,23 +16,58 @@ Date:
 */
 
 
+// #include <bits/stdc++.h>
+#include<iostream>
 #include "myRISCVSim.h"
-# include <bits/stdc++.h>
 using namespace std;
 
-int main(int argc, char** argv) {
-  char* prog_mem_file; 
-  if(argc < 2) {
-    printf("Incorrect number of arguments. Please invoke the simulator \n\t./myRISCVSim <input mem file> \n");
-    exit(1);
-  }
-  
-  //reset the processor
-  reset_proc();
-  //load the program memory
-  load_program_memory(argv[1]);
-  //run the simulator
-  run_riscvsim();
+// #define M 32
+// void write_data_memory();
 
-  return 1;
+// //Register file
+// static unsigned int X[32];
+// //flags
+// //memory
+// static unsigned int MEM[4000]; // only 4000?
+// static int DMEM[1000000];      // give lui in range of 0x00010
+
+// //intermediate datapath and control path signals
+// static unsigned int instruction_word;
+// static unsigned int operand1;
+// static unsigned int operand2;
+// char Type = '0';
+// static bitset<M> inst;
+// static unsigned int des_reg;
+// static int des_res;
+// string subtype;
+// static int imm;
+// static int pc = 0;
+// unsigned int sz = 0;
+
+// int main(int argc, char** argv) {
+//   char* prog_mem_file; 
+//   if(argc < 2) {
+//     printf("Incorrect number of arguments. Please invoke the simulator \n\t./myRISCVSim <input mem file> \n");
+//     exit(1);
+//   }
+  
+//   //reset the processor
+//   reset_proc();
+//   //load the program memory
+//   load_program_memory(argv[1]);
+//   //run the simulator
+//   run_riscvsim();
+
+//   return 1;
+// }
+
+int main()
+{
+  // reset the processor
+  reset_proc();
+  // load the program memory
+  load_program_memory();
+  // run the simulator
+  run_riscvsim();
+  return 0;
 }

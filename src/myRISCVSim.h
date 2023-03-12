@@ -1,11 +1,34 @@
-#include <bits/stdc++.h>
+
+/* 
+
+The project is developed as part of Computer Architecture class
+Project Name: Functional Simulator for subset of RISCV Processor
+
+Developer's Name:
+Developer's Email id:
+Date: 
+
+*/
+
+
+/* myRISCVSim.cpp
+   Purpose of this file: implementation file for myRISCVSim
+*/
+#include<bits/stdc++.h>
 using namespace std;
+
 
 #define M 32
 void write_data_memory();
+
+//Register file
 static unsigned int X[32];
+//flags
+//memory
 static unsigned int MEM[4000]; // only 4000?
 static int DMEM[1000000];      // give lui in range of 0x00010
+
+//intermediate datapath and control path signals
 static unsigned int instruction_word;
 static unsigned int operand1;
 static unsigned int operand2;
@@ -17,6 +40,23 @@ string subtype;
 static int imm;
 static int pc = 0;
 unsigned int sz = 0;
+
+// #define M 32
+// void write_data_memory();
+// static unsigned int X[32];
+// static unsigned int MEM[4000]; // only 4000?
+// static int DMEM[1000000];      // give lui in range of 0x00010
+// static unsigned int instruction_word;
+// static unsigned int operand1;
+// static unsigned int operand2;
+// char Type = '0';
+// static bitset<M> inst;
+// static unsigned int des_reg;
+// static int des_res;
+// string subtype;
+// static int imm;
+// static int pc = 0;
+// unsigned int sz = 0;
 // 0x14 0xFE32CCE3
 // -----------DOUBT------------
 // should the instuction memory be in byte format
@@ -112,7 +152,7 @@ string findTwoscomplement(string str)
   // return the modified string
   return str;
 }
-string subtype_select(bitset<3> func3, bitset<7> func7, bitset<7> op)
+void subtype_select(bitset<3> func3, bitset<7> func7, bitset<7> op)
 {
   string Func3 = func3.to_string(), Func7 = func7.to_string(), Op = op.to_string();
   switch (Type)
@@ -744,13 +784,6 @@ void run_riscvsim()
   }
 }
 
-int main()
-{
-  // reset the processor
-  reset_proc();
-  // load the program memory
-  load_program_memory();
-  // run the simulator
-  run_riscvsim();
-  return 0;
-}
+
+
+
