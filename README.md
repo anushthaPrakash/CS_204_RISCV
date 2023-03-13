@@ -36,12 +36,14 @@
 - `pip` (>21.0.3)
 - `python` (>3.7)
 ### Libraries Used
+
 #### Back-end - Python3 + g++
 - `os: ` for getting and adding path to certain file locations.
 - `sys: ` for reading and editing files with ease.
 #### Front-end - Python3
 - `PyQT5: ` for the Graphic User Interface.
 - `qdarkstyle: ` for dark theme
+
 <br>
 <h3>Running the GUI version</h3>
 <ul>
