@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RISCV</title>
 </head>
 <body>
     <br />
 <p align="center">
-    <img src="logo.png" alt="Logo" width="580" height="200">
+    <img src="pics/logo.png" alt="Logo" width="580" height="200">
 
   <h3 align="center">RISC-V Simulator</h3>
 
@@ -32,16 +31,20 @@
 </ul>
 <br>
 <h2 id="getting-started">Getting Started: Installation and running</h2>
+
 ### Prerequisites
 - `pip` (>21.0.3)
 - `python` (>3.7)
+
 ### Libraries Used
+
 #### Back-end - Python3 + g++
 - `os: ` for getting and adding path to certain file locations.
 - `sys: ` for reading and editing files with ease.
 #### Front-end - Python3
 - `PyQT5: ` for the Graphic User Interface.
 - `qdarkstyle: ` for dark theme
+
 <br>
 <h3>Running the GUI version</h3>
 <ul>
@@ -86,7 +89,36 @@
   <li>If you want to run any code written in assembly, Go to venus copy paste the dump in the input.py file in src folder the run the inp.py file. It will convert the dump into the required format and write it in the test_case.mem file . Then you can run the code again to see the output</li>
 </ul>
 <br>
-<h2 id="about">About the Program</h2>
+### Output Format
+
+Check the generated folder for details of compilation. It contains:
+
+- `stats.txt :` contains general stats about the code compilation.
+- `memory.txt:` details of memory
+- `register.txt:` details of registers
+- `outputLog.txt:` details of changes in temporary registers for each cycle
+- `forwarding.txt:` details of data forwarding paths taken in each cycle
+
+### ScreenShots
+
+<p align="center">
+  <img src="pics/1.jpeg" alt="Logo" width="1080" height="500">
+</p>
+<p align="center">
+  <img src="pics/2.jpeg" alt="Logo" width="1080" height="500">
+</p>
+
+### Contributors
+
+<div align="center">
+  <strong>
+    <a href="https://github.com/soggycake0312">Aditya Agarwal</a> &emsp;
+    <a href="https://github.com/aneeketMangal">Aneeket Mangal</a> &emsp;
+    <a href="https://github.com/HETFADIA">Het Fadia</a> &emsp;
+    <a href="https://github.com/Shikhar-Soni">Shikhar Soni</a> &emsp;
+    <a href="https://github.com/tanmayaeron">Tanmay Aeron</a> &emsp;
+  </strong>
+</div>
 
 </body>
 </html>
