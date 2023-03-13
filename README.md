@@ -32,16 +32,17 @@
 </ul>
 <br>
 <h2 id="getting-started">Getting Started: Installation and running</h2>
-<h4> Prerequisites</h4>
+### Prerequisites
 - `pip` (>21.0.3)
 - `python` (>3.7)
-<h4> Libraries Used</h4>
-<h5>Back-end - Python3 and g++</h5>
+### Libraries Used
+#### Back-end - Python3 + g++
 - `os: ` for getting and adding path to certain file locations.
 - `sys: ` for reading and editing files with ease.
-<h5>Front-end - Python3</h5>
+#### Front-end - Python3
 - `PyQT5: ` for the Graphic User Interface.
 - `qdarkstyle: ` for dark theme
+<br>
 <h3>Running the GUI version</h3>
 <ul>
   <li>Your computer should have Python3, G++ and Makefile installed.You can check if they are installed or not by using the following commands</li>
@@ -76,11 +77,11 @@
 <h3>Feeding Input to the program</h3>
 <ul>
   <li>The src Folder contains a test_case.mem file in which the machine code you want to run will go in the following format (containing the instruction code as well as the pc).The exit code will be 0xEF000011 </li>
-  ```python
+  <pre><code>
     0x0 0x00500513
     0x4 0x008000EF
     0x8 0x0440006F
-  ```
+  </code></pre>
   <li>The machine code in this format for the 3 test cases i.e. bubblesort (bubblesort.mem),sum of array element (arraysum.mem) and fibonacci(fibonacci.mem) is provided in the root directory. You can copy paste the code from there to the test_case.mem file in src folder for running that.</li>
   <li>If you want to run any code written in assembly, Go to venus copy paste the dump in the input.py file in src folder the run the inp.py file. It will convert the dump into the required format and write it in the test_case.mem file . Then you can run the code again to see the output</li>
 </ul>
