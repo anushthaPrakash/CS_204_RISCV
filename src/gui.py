@@ -138,12 +138,19 @@ class Ui_MainWindow(object):
     
     def assembly(self):
         string=os.path.abspath(os.getcwd())
-        string2 = string
-        string +="\main.cpp myRISCVSim.cpp -I ../include"
-        string = "g++ " + string
-        os.system(string)
-        string2 += "./a.exe"
-        os.system(string2)
+        string2 = string  
+        if (os.name == "posix"):  #If the OS used is Ubuntu 
+            string +="\/main.cpp myRISCVSim.cpp -I ../include"
+            string = "g++ " + string
+            os.system(string)
+            string2 += "\/./a.out"
+            os.system(string2)
+        elif (os.name == "nt"):   #If the OS used is Windows
+            string +="\main.cpp myRISCVSim.cpp -I ../include"
+            string = "g++ " + string
+            os.system(string)
+            string2 += "./a.exe"
+            os.system(string2)
         self.textBrowser_2.append("Ready to run!!!!")
 
     def run(self):
