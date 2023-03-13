@@ -20,7 +20,11 @@
   </p>
 </p>
     <h1  style="color:blue;text-align:center" ><strong>CS204 Project:RISC-V Assembler</strong></h1>
+<<<<<<< HEAD
     <p>The aim of this project is to simulate the machine level execution of RISC-V as well as the execution of RISC-V 32-bit instructions using a high level language. The Project also aims to give final updates to the user regarding each step of the execution of the program. It also returns the final status of the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 different instructions and can be extended to allow the use of any number of instructions as long as the instructions are supported by 32-bit RISC-V ISA. The program executes each instruction using five stages as described in the RISC-V architecture. The instruction memory size is upto 1000 instructions.</p>
+=======
+    <p>The aim of this project is to simulate the machine level execution of RISC-V as well as the execution of RISC-V 32-bit instructions using a high level language. The Project also aims to give final updates to the user regarding each step of the execution of the program. It also returns the final status of the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 different instructions and can be extended to allow the use of any number of instructions as long as the instructions are supported by 32-bit RISC-V ISA. The program executes each instruction using five stages as described in the RISC-V architecture.The instruction memory size is upto 1000 instructions</p>
+>>>>>>> 3102e2a8bd9114175687cafb34ea8ea7f43720fb
     <br/>
     <h2>Table of Contents</h2>
 <ul>
@@ -66,7 +70,11 @@
 <ul>
   <li>The above commands will open the GUI. You have to press ASSEMBLE, which will compile and run the cpp files. </li>
   <li>Wait for the message "Ready to run" and then press the RUN button. </li>
+<<<<<<< HEAD
   <li>This will print the output log, update the register values and data memory in the GUI.</li>
+=======
+  <li>This will print the output log, upadte the register values and data memory in the GUI.</li>
+>>>>>>> 3102e2a8bd9114175687cafb34ea8ea7f43720fb
 </ul>
 <h3>Running the Basic version without GUI</h3>
 <ul>
