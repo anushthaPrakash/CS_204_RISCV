@@ -4,9 +4,12 @@ import os,sys,subprocess
 from PyQt5.QtWidgets import QApplication, QDialog, QLabel, QGroupBox, QVBoxLayout, QHBoxLayout, QCheckBox, QRadioButton
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QRect
+import qdarkstyle
+from qdarkstyle.dark.palette import DarkPalette
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
+        self.currentTheme = "L"
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1020, 821)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -29,6 +32,9 @@ class Ui_MainWindow(object):
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_4.setGeometry(QtCore.QRect(90, 750, 89, 25))
         self.pushButton_4.setObjectName("pushButton_4")
+        self.toggleButton = QtWidgets.QPushButton(self.centralwidget)
+        self.toggleButton.setGeometry(QtCore.QRect(450, 775, 110, 30))
+        self.toggleButton.setObjectName("toggleButton")
 
         font = QtGui.QFont()
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)  #for register data table 
@@ -116,6 +122,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "Test Case"))
         self.pushButton_3.setText(_translate("MainWindow", "RUN"))
         self.pushButton_4.setText(_translate("MainWindow", "Output Log"))
+        self.toggleButton.setText(_translate("MainWindow", "Change Theme"))
         self.label_3.setText(_translate("MainWindow", "Register View"))
         self.label_4.setText(_translate("MainWindow", "Memory View"))
         self.label_2.setText(_translate("MainWindow", "Output"))
@@ -132,6 +139,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.clicked.connect(lambda: self.opendata())
         self.pushButton.clicked.connect(lambda: self.guihelp())
         self.pushButton_4.clicked.connect(lambda: self.outputlog())
+        self.toggleButton.clicked.connect(lambda: self.changeTheme())
         self.pushButton_6.clicked.connect(lambda: self.assembly())
         self.pushButton_5.clicked.connect(lambda: self.step())
         self.pushButton_3.clicked.connect(lambda: self.run())
@@ -171,6 +179,14 @@ class Ui_MainWindow(object):
                 temp2=str(item2)
                 self.tableWidget_2.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
                 i += 1
+
+    def changeTheme(self):
+        if self.currentTheme == "L":
+            self.currentTheme = "D"
+            self.centralwidget.setStyleSheet(qdarkstyle.load_stylesheet(qt_api='pyqt5', palette=DarkPalette))
+        elif self.currentTheme == "D":
+            self.currentTheme = "L"
+            self.centralwidget.setStyleSheet("")
 
     def opendata(self):
         try:
