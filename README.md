@@ -20,7 +20,7 @@
   </p>
 </p>
     <h1  style="color:blue;text-align:center" ><strong>CS204 Project:RISC-V Assembler</strong></h1>
-    <p>The aim of this project is to simulate the machine level execution of RISC V as well as the execution of RISC-V 32-bit instructions using a high level language.. The Project also aims to give updates to the user regarding each step of the execution of the program. It also returns the final status of the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 different instructions and can be extended to allow the use of any number of instructions by editing the .csv files as long as the instructions are supported by 32-bit RISC V ISA. For each instruction the program gives various updates like IR, PC, decoded instruction, temporary registers like RA, RB, RZ, RY, etc. during each cycle and prints the number of cycles. The program executes each instruction using five stages as described in the RISC V architecture.The instruction memory size is upto 1000 instructions</p>
+    <p>The aim of this project is to simulate the machine level execution of RISC V as well as the execution of RISC-V 32-bit instructions using a high level language.. The Project also aims to give updates to the user regarding each step of the execution of the program. It also returns the final status of the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 different instructions and can be extended to allow the use of any number of instructions by editing the .csv files as long as the instructions are supported by 32-bit RISC V ISA. For each instruction the program gives various updates like IR, PC, decoded instruction, temporary registers like RA, RB, RZ, RY, etc. during each cycle and prints the number of cycles. The program executes each instruction using five stages as described in the RISC V architecture. The instruction memory size is upto 1000 instructions.</p>
     <br/>
     <h2>Table of Contents</h2>
 <ul>
@@ -65,7 +65,7 @@
 </ul>
 <ul>
   <li>The above commands will open the GUI and you have to press ASSEMBLE and wait for the message "ready to run", the press the RUN button. </li>
-  <li>This will print the output log , upadte the resistors and data memory</li>
+  <li>This will print the output log , update the resistors and data memory</li>
   <li>You can see the values in the output windows</li>
 </ul>
 <h3>Running the Basic version without GUI</h3>
