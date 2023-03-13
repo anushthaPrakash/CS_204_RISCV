@@ -95,7 +95,8 @@ program executes each instruction using five stages as described in the RISC-V a
   <li>If you want to run any code written in assembly, Go to venus simulator (online), copy-paste the dump in the input.py file in src folder, then run the inp.py file. It will convert the dump into the required assembly format and write it in the test_case.mem file. You can run the code to see the output.</li>
 </ul>
 <br>
-### Output Format
+
+<h3>Output Format</h3>
 
 Check the generated folder for details of compilation. It contains:
 
@@ -104,7 +105,7 @@ Check the generated folder for details of compilation. It contains:
 - `register.mem:` details of registers
 - `D_Memory.mem:` details of data memory
 
-## ScreenShots
+<h2 id="screenshoots">ScreenShots</h2>
 
 <p align="center">
   <img src="pics/1.jpeg" alt="Logo" width="1080" height="500">
@@ -113,7 +114,7 @@ Check the generated folder for details of compilation. It contains:
   <img src="pics/2.jpeg" alt="Logo" width="1080" height="500">
 </p>
 
-## Contributors
+<h2 id="contributors">Contributers</h2>
 
 <div align="center">
   <strong>
