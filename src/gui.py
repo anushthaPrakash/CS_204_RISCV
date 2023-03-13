@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QRect
 import qdarkstyle
 from qdarkstyle.dark.palette import DarkPalette
+import webbrowser
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -160,6 +161,9 @@ class Ui_MainWindow(object):
             string2 += "./a.exe"
             os.system(string2)
         self.textBrowser_2.append("Ready to run!!!!")
+    
+    def guihelp(self):
+        webbrowser.open('https://github.com/anushthaPrakash/CS_204_RISCV')
 
     def run(self):
             data=open('output_log.mem','r')
