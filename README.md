@@ -24,8 +24,7 @@
     <br/>
     <h2>Table of Contents</h2>
 <ul>
-  <li><a href="#getting-started">Getting Started:Installation and running</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="#getting-started">Getting Started: Installation and Running</a></li>
   <li><a href="#screenshoots">Screenshots</a></li>
   <li><a href="#contributors">Contributors</a></li>
 </ul>
@@ -116,7 +115,6 @@ Check the generated folder for details of compilation. It contains:
     <a href="https://github.com/ARinger22">Arpit Kumar Gautam</a> &emsp;
     <a href="https://github.com/AGlade7">Aryaman Gupta</a> &emsp;
     <a href="https://github.com/ashima-09">Ashima Goyal</a> &emsp;
-    <a href="https://github.com/tanmayaeron">Tanmay Aeron</a> &emsp;
   </strong>
 </div>
 
