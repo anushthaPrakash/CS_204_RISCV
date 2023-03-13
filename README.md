@@ -31,9 +31,11 @@
 </ul>
 <br>
 <h2 id="getting-started">Getting Started: Installation and running</h2>
+
 ### Prerequisites
 - `pip` (>21.0.3)
 - `python` (>3.7)
+
 ### Libraries Used
 
 #### Back-end - Python3 + g++
