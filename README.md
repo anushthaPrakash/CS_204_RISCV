@@ -19,21 +19,21 @@
     
   </p>
 </p>
-    <h1  style="color:blue;text-align:center" ><strong>CS204 Project:RISC-V Assembler</strong></h1>
+<h1  style="color:blue;text-align:center" ><strong>CS204 Project:RISC-V Assembler</strong></h1>
 
-    <p>The aim of this project is to simulate the machine level execution of RISC-V as well as the execution of RISC-V 32-bit instructions using a high level 
-    language. The Project also aims to give final updates to the user regarding each step of the execution of the program. It also returns the final status of 
-    the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 
-    different instructions and can be extended to allow the use of any number of instructions as long as the instructions are supported by 32-bit RISC-V ISA. The 
-    program executes each instruction using five stages as described in the RISC-V architecture. The instruction memory size is upto 1000 instructions.</p>
+<p>The aim of this project is to simulate the machine level execution of RISC-V as well as the execution of RISC-V 32-bit instructions using a high level 
+language. The Project also aims to give final updates to the user regarding each step of the execution of the program. It also returns the final status of 
+the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 
+different instructions and can be extended to allow the use of any number of instructions as long as the instructions are supported by 32-bit RISC-V ISA. The 
+program executes each instruction using five stages as described in the RISC-V architecture. The instruction memory size is upto 1000 instructions.</p>
 
-    <br/>
-    <h2>Table of Contents</h2>
- <ul>
+<br/>
+<h2>Table of Contents</h2>
+<ul>
   <li><a href="#getting-started">Getting Started: Installation and Running</a></li>
   <li><a href="#screenshoots">Screenshots</a></li>
   <li><a href="#contributors">Contributors</a></li>
- </ul>
+</ul>
 <br>
 <h2 id="getting-started">Getting Started: Installation and running</h2>
 
