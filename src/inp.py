@@ -1,6 +1,6 @@
 import sys
 file = open('input.mem', 'r')
-sys.stdout = open('simple_add.mem','w')
+sys.stdout = open('test_case.mem','w')
 # This will print every line one by one in the file
 i =0 
 for each in file:

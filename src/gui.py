@@ -113,7 +113,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "RISC_Window"))
         self.label.setText(_translate("MainWindow", "RISC-V Simulator"))
         self.pushButton.setText(_translate("MainWindow", "README"))
-        self.pushButton_2.setText(_translate("MainWindow", "simple_add.mem"))
+        self.pushButton_2.setText(_translate("MainWindow", "Test Case"))
         self.pushButton_3.setText(_translate("MainWindow", "RUN"))
         self.pushButton_4.setText(_translate("MainWindow", "Output Log"))
         self.label_3.setText(_translate("MainWindow", "Register View"))
@@ -175,11 +175,11 @@ class Ui_MainWindow(object):
     def opendata(self):
         try:
             string=os.path.abspath(os.getcwd())
-            string+="\simple_add.mem"
+            string+="\\test_case.mem"
             os.startfile(string)
         except:
             opener = "open" if sys.platform == "darwin" else "xdg-open"
-            subprocess.call([opener, "simple_add.mem"])
+            subprocess.call([opener, "test_case.mem"])
     def outputlog(self):
         try:
             string=os.path.abspath(os.getcwd())

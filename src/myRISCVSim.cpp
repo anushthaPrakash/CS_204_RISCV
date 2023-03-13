@@ -301,7 +301,7 @@ void load_program_memory()
 {
   FILE *fp;
   unsigned int address, instruction;
-  fp = fopen("simple_add.mem", "r"); //reading from the file 
+  fp = fopen("test_case.mem", "r"); //reading from the file 
   if (fp == NULL)
   {
     printf("Error opening input mem file, ");
