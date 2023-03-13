@@ -13,14 +13,14 @@
   <h3 align="center">RISC-V Simulator</h3>
 
   <p align="center">
-    A C++ and python implementation of RISC-V Simulation.
+    A C++ and Python implementation of RISC-V Simulation.
     <br />
     <a href="https://github.com/anushthaPrakash/CS_204_RISCV/tree/main/src"><strong>Explore the docs »</strong></a>
     
   </p>
 </p>
     <h1  style="color:blue;text-align:center" ><strong>CS204 Project:RISC-V Assembler</strong></h1>
-    <p>The aim of this project is to simulate the machine level execution of RISC V as well as the execution of RISC-V 32-bit instructions using a high level language.. The Project also aims to give updates to the user regarding each step of the execution of the program. It also returns the final status of the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 different instructions and can be extended to allow the use of any number of instructions by editing the .csv files as long as the instructions are supported by 32-bit RISC V ISA. For each instruction the program gives various updates like IR, PC, decoded instruction, temporary registers like RA, RB, RZ, RY, etc. during each cycle and prints the number of cycles. The program executes each instruction using five stages as described in the RISC V architecture. The instruction memory size is upto 1000 instructions.</p>
+    <p>The aim of this project is to simulate the machine level execution of RISC-V as well as the execution of RISC-V 32-bit instructions using a high level language. The Project also aims to give final updates to the user regarding each step of the execution of the program. It also returns the final status of the memory and registers as output for the user to analyse the working of their programs thoroughly. The Project currently allows the user to use 26 different instructions and can be extended to allow the use of any number of instructions as long as the instructions are supported by 32-bit RISC-V ISA. The program executes each instruction using five stages as described in the RISC-V architecture. The instruction memory size is upto 1000 instructions.</p>
     <br/>
     <h2>Table of Contents</h2>
 <ul>
@@ -37,7 +37,7 @@
 
 ### Libraries Used
 
-#### Back-end - Python3 + g++
+#### Back-end - Python3 and G++
 - `os: ` for getting and adding path to certain file locations.
 - `sys: ` for reading and editing files with ease.
 #### Front-end - Python3
@@ -64,9 +64,9 @@
   </code></pre>
 </ul>
 <ul>
-  <li>The above commands will open the GUI and you have to press ASSEMBLE and wait for the message "ready to run", the press the RUN button. </li>
-  <li>This will print the output log , update the resistors and data memory</li>
-  <li>You can see the values in the output windows</li>
+  <li>The above commands will open the GUI. You have to press ASSEMBLE, which will compile and run the cpp files. </li>
+  <li>Wait for the message "Ready to run" and then press the RUN button. </li>
+  <li>This will print the output log, update the register values and data memory in the GUI.</li>
 </ul>
 <h3>Running the Basic version without GUI</h3>
 <ul>
@@ -74,7 +74,7 @@
   <pre><code>
     g++ main.cpp myRISCVSim.cpp -I ../include
   </code></pre>
-  <li>This will run the progame and output the output log in data_out.mem,data memory in D_memory.mem and register values in register.mem</li>
+  <li>This will run the program and output the output log in output_log.mem, data memory in D_memory.mem and register values in register.mem</li>
 </ul>
 <h3>Feeding Input to the program</h3>
 <ul>
@@ -84,8 +84,8 @@
     0x4 0x008000EF
     0x8 0x0440006F
   </code></pre>
-  <li>The machine code in this format for the 3 test cases i.e. bubblesort (bubblesort.mem),sum of array element (arraysum.mem) and fibonacci(fibonacci.mem) is provided in the root directory. You can copy paste the code from there to the test_case.mem file in src folder for running that.</li>
-  <li>If you want to run any code written in assembly, Go to venus copy paste the dump in the input.py file in src folder the run the inp.py file. It will convert the dump into the required format and write it in the test_case.mem file . Then you can run the code again to see the output</li>
+  <li>The machine code in this format for the 3 test cases i.e. bubblesort (bubblesort.mem), sum of array element (arraysum.mem) and fibonacci (fibonacci.mem) are provided in the root directory. You can copy-paste the code from there to test_case.mem file in src folder for running them.</li>
+  <li>If you want to run any code written in assembly, Go to venus simulator (online), copy-paste the dump in the input.py file in src folder, then run the inp.py file. It will convert the dump into the required assembly format and write it in the test_case.mem file. You can run the code to see the output.</li>
 </ul>
 <br>
 ### Output Format
