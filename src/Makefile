@@ -1,6 +1,6 @@
 
 all:
-	gcc myRISCVSim.c main.c -I ../include -o ../bin/myRISCVSim
+	python3 gui.py
 
 clean:
 	rm -f *.o *~ *.bak ../bin/myRISCVSim
