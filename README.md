@@ -26,7 +26,7 @@
 <ul>
   <li><a href="#getting-started">Getting Started:Installation and running</a></li>
   <li><a href="#about">About</a></li>
-  <li><a href="#usage">Implementation</a></li>
+  <li><a href="#screenshoots">Screenshots</a></li>
   <li><a href="#contributors">Contributors</a></li>
 </ul>
 <br>
@@ -99,7 +99,7 @@ Check the generated folder for details of compilation. It contains:
 - `outputLog.txt:` details of changes in temporary registers for each cycle
 - `forwarding.txt:` details of data forwarding paths taken in each cycle
 
-### ScreenShots
+## ScreenShots
 
 <p align="center">
   <img src="pics/1.jpeg" alt="Logo" width="1080" height="500">
@@ -108,14 +108,14 @@ Check the generated folder for details of compilation. It contains:
   <img src="pics/2.jpeg" alt="Logo" width="1080" height="500">
 </p>
 
-### Contributors
+## Contributors
 
 <div align="center">
   <strong>
-    <a href="https://github.com/soggycake0312">Aditya Agarwal</a> &emsp;
-    <a href="https://github.com/aneeketMangal">Aneeket Mangal</a> &emsp;
-    <a href="https://github.com/HETFADIA">Het Fadia</a> &emsp;
-    <a href="https://github.com/Shikhar-Soni">Shikhar Soni</a> &emsp;
+    <a href="https://github.com/anushthaPrakash">Anushtha Prakash</a> &emsp;
+    <a href="https://github.com/ARinger22">Arpit Kumar Gautam</a> &emsp;
+    <a href="https://github.com/AGlade7">Aryaman Gupta</a> &emsp;
+    <a href="https://github.com/ashima-09">Ashima Goyal</a> &emsp;
     <a href="https://github.com/tanmayaeron">Tanmay Aeron</a> &emsp;
   </strong>
 </div>
