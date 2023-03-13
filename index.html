@@ -30,7 +30,13 @@
   <li><a href="#usage">Implementation</a></li>
   <li><a href="#contributors">Contributors</a></li>
 </ul>
+<br>
 <h2 id="getting-started">Getting Started: Installation and running</h2>
+<h3></h3>
+### Prerequisites
+
+- `pip` (>21.0.3)
+- `python` (>3.7)
 <h3>Running the GUI version</h3>
 <ul>
   <li>Your computer should have Python3, G++ and Makefile installed.You can check if they are installed or not by using the following commands</li>
@@ -49,7 +55,6 @@
     make
   </code></pre>
 </ul>
-<br>
 <ul>
   <li>The above commands will open the GUI and you ahve to press RUN</li>
   <li>This will print the output log , upadte the resistors and data memory</li>
@@ -61,8 +66,20 @@
   <pre><code>
     g++ main.cpp myRISCVSim.cpp -I ../include
   </code></pre>
-  <li>This will run the progame and output the output log in data_out.mem,D_memory.mem and resistor.mem</li>
+  <li>This will run the progame and output the output log in data_out.mem,data memory in D_memory.mem and register values in register.mem</li>
 </ul>
+<h3>Feeding Input to the program</h3>
+<ul>
+  <li>The src Folder contains a test_case.mem file in which the machine code you want to run will go in the following format (containing the instruction code as well as the pc).The exit code will be 0xEF000011 </li>
+  <pre><code>
+    0x0 0x000102B7
+    0x4 0x00A00193
+  </code></pre>
+  <li>The machine code in this format for the 3 test cases i.e. bubblesort (bubblesort.mem),sum of array element (arraysum.mem) and fibonacci(fibonacci.mem) is provided in the root directory. You can copy paste the code from there to the test_case.mem file in src folder for running that.</li>
+  <li>If you want to run any code written in assembly, Go to venus copy paste the dump in the input.py file in src folder the run the inp.py file. It will convert the dump into the required format and write it in the test_case.mem file . Then you can run the code again to see the output</li>
+</ul>
+<br>
+<h2 id="about">About the Program</h2>
 
 </body>
 </html>
