@@ -8,7 +8,7 @@
 <body>
     <br />
 <p align="center">
-    <img src="logo.png" alt="Logo" width="580" height="200">
+    <img src="pics/logo.png" alt="Logo" width="580" height="200">
 
   <h3 align="center">RISC-V Simulator</h3>
 
@@ -89,7 +89,36 @@
   <li>If you want to run any code written in assembly, Go to venus copy paste the dump in the input.py file in src folder the run the inp.py file. It will convert the dump into the required format and write it in the test_case.mem file . Then you can run the code again to see the output</li>
 </ul>
 <br>
-<h2 id="about">About the Program</h2>
+### Output Format
+
+Check the generated folder for details of compilation. It contains:
+
+- `stats.txt :` contains general stats about the code compilation.
+- `memory.txt:` details of memory
+- `register.txt:` details of registers
+- `outputLog.txt:` details of changes in temporary registers for each cycle
+- `forwarding.txt:` details of data forwarding paths taken in each cycle
+
+### ScreenShots
+
+<p align="center">
+  <img src="pics/1.jpeg" alt="Logo" width="1080" height="500">
+</p>
+<p align="center">
+  <img src="pics/2.jpeg" alt="Logo" width="1080" height="500">
+</p>
+
+### Contributors
+
+<div align="center">
+  <strong>
+    <a href="https://github.com/soggycake0312">Aditya Agarwal</a> &emsp;
+    <a href="https://github.com/aneeketMangal">Aneeket Mangal</a> &emsp;
+    <a href="https://github.com/HETFADIA">Het Fadia</a> &emsp;
+    <a href="https://github.com/Shikhar-Soni">Shikhar Soni</a> &emsp;
+    <a href="https://github.com/tanmayaeron">Tanmay Aeron</a> &emsp;
+  </strong>
+</div>
 
 </body>
 </html>
