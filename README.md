@@ -15,7 +15,7 @@
   <p align="center">
     A C++ and Python implementation of RISC-V Simulation.
     <br />
-    <a href="https://github.com/anushthaPrakash/CS_204_RISCV/tree/main/src"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/anushthaPrakash/CS_204_RISCV/blob/main/src/README.txt"><strong>Explore the docs »</strong></a>
     
   </p>
 </p>
@@ -117,10 +117,10 @@ Check the generated folder for details of compilation. It contains:
 
 <h3>Windows View</h3>
 <p align="center">
-  <img src="pics/3.jpeg" alt="Logo" width="1080" height="500">
+  <img src="pics/3.png" alt="Logo" width="1080" height="500">
 </p>
 <p align="center">
-  <img src="pics/4.jpeg" alt="Logo" width="1080" height="500">
+  <img src="pics/4.png" alt="Logo" width="1080" height="500">
 </p>
 
 <h2 id="contributors">Contributers</h2>
