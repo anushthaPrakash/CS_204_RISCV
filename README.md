@@ -107,11 +107,20 @@ Check the generated folder for details of compilation. It contains:
 
 <h2 id="screenshoots">ScreenShots</h2>
 
+<h3>Linux View</h3>
 <p align="center">
   <img src="pics/1.jpeg" alt="Logo" width="1080" height="500">
 </p>
 <p align="center">
   <img src="pics/2.jpeg" alt="Logo" width="1080" height="500">
+</p>
+
+<h3>Windows View</h3>
+<p align="center">
+  <img src="pics/3.jpeg" alt="Logo" width="1080" height="500">
+</p>
+<p align="center">
+  <img src="pics/4.jpeg" alt="Logo" width="1080" height="500">
 </p>
 
 <h2 id="contributors">Contributers</h2>
