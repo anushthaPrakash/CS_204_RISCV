@@ -92,11 +92,10 @@
 
 Check the generated folder for details of compilation. It contains:
 
-- `stats.txt :` contains general stats about the code compilation.
-- `memory.txt:` details of memory
-- `register.txt:` details of registers
-- `outputLog.txt:` details of changes in temporary registers for each cycle
-- `forwarding.txt:` details of data forwarding paths taken in each cycle
+- `output_log.mem :` contains general stats about the different stages like fetch,decode,ALU,memory access,register writeback and details of changes in temporary registers for each cycle
+- `data_out.mem:` details of instruction memory
+- `register.mem:` details of registers
+- `D_Memory.mem:` details of data memory
 
 ## ScreenShots
 

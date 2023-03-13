@@ -25,9 +25,20 @@ CS112-Project
       |
       |- myARMSim.h
   |- src
-      |- main.c
+      |- main.cpp
       |- Makefile
-      |- myARMSim.h
+      |- myARMSim.cpp
+      |- D_Memory.mem
+      |- data_out.mem
+      |- gui.py
+      |- inp.py
+      |- input.mem
+      |- output_log.mem
+      |- README.txt
+      |- register.mem
+      |- test_case.mem
+
+
   |- test
       |- simple_add.mem
       |- fib.mem
