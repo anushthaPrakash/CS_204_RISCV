@@ -224,7 +224,7 @@ void load_resister(){
   }
   for (i = 0; i < 32; i++)
   {
-    fprintf(fp, "x%u - %u \t\t           \n", i, X[i]);
+    fprintf(fp, "x%u - %u                                                                            \n", i, X[i]);
   } 
   fclose(fp);
 }
@@ -239,7 +239,7 @@ void load_Memory(){
   }
   for (i = 0; i < 1000000; i += 4)
   {
-    fprintf(fp, "%u  \t\t\t  \n", DMEM[i]);
+    fprintf(fp, "%u                                                                                   \n", DMEM[i]);
   }
   fclose(fp);
 }
