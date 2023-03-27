@@ -123,7 +123,7 @@ Check the generated folder for details of compilation. It contains:
   <img src="pics/4.png" alt="Logo" width="1080" height="500">
 </p>
 
-<h2 id="contributors">Contributers</h2>
+<h2 id="contributors">Contributors</h2>
 
 <div align="center">
   <strong>
