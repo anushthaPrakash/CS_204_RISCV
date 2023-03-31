@@ -601,7 +601,7 @@ void execute()
   }
   else if(Type == 'B'){//beq, bne, bge, blt
     if(subtype == "beq"){ if(X[operand1] == X[operand2]) {pc += imm; cout<<"if operand1 and operand2 are equal then Adding "<<pc<<" and "<<imm<<endl;}else {pc += 4; cout<<"if operand1 and operand2 are not equal then Adding "<<pc<<" and "<<4<<endl;}}
-    else if(subtype == "bne") {if(X[operand1] != X[operand2]) {pc += imm; cout<<"if operand1 and operand2 are not equal then Adding "<<pc<<" and "<<imm<<endl;}  else {cout<<"if operand1 and operand2 are equal then Adding "<<pc<<" and "<<4<<endl;}}
+    else if(subtype == "bne") {if(X[operand1] != X[operand2]) {pc += imm; cout<<"if operand1 and operand2 are not equal then Adding "<<pc<<" and "<<imm<<endl;}  else {pc += 4;cout<<"if operand1 and operand2 are equal then Adding "<<pc<<" and "<<4<<endl;}}
     else if(subtype == "bge") {if(X[operand1] >= X[operand2]){ pc += imm; cout<<"if operand1 greater than and equal to operand2 then Adding "<<pc<<" and "<<imm<<endl;}  else {pc += 4; cout<<"if operand1 less than operand2 then Adding "<<pc<<" and "<<4<<endl;}}
     else if(subtype == "blt") {if(X[operand1] < X[operand2]) {pc += imm; cout<<"if operand1 less than operand2 then Adding "<<pc<<" and "<<imm<<endl;} else {pc += 4; cout<<"if operand1 greater than and equal to operand2 then Adding "<<pc<<" and "<<4<<endl;}}
   }
