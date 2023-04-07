@@ -231,12 +231,12 @@ void load_randata()
     fprintf(fp, "Data transfer instructions = %d                                                  \n", Ld_St);
     fprintf(fp, "ALU instructions = %d                                                            \n", ALU_inst);
     fprintf(fp, "Cntrol instructions = %d                                                         \n", Control_inst);
-    fprintf(fp, "Total stalls = %d                                                                \n", (Stalls_C+Stalls_D));
-    fprintf(fp, "Data hazards found = %d                                                          \n", Data_H);
-    fprintf(fp, "Control hazards found = %d                                                       \n", Con_H);
+    fprintf(fp, "Total stalls = %d                                                                \n", 0);
+    fprintf(fp, "Data hazards found = %d                                                          \n", 0);
+    fprintf(fp, "Control hazards found = %d                                                       \n", 0);
     fprintf(fp, "Branch mispredictions = %d                                                       \n", Branch_Mis);
-    fprintf(fp, "Data hazard stalls = %d                                                          \n", Stalls_D);
-    fprintf(fp, "Control hazard stalls = %d                                                       \n", Stalls_C);
+    fprintf(fp, "Data hazard stalls = %d                                                          \n", 0);
+    fprintf(fp, "Control hazard stalls = %d                                                       \n", 0);
     fclose(fp);
 }
 
@@ -915,6 +915,6 @@ void run_riscvsim()
     load_randata();
     load_register();
     load_Memory();
-    load_dhazards();
-    load_chazards();
+    //load_dhazards();
+    //load_chazards();
 }
