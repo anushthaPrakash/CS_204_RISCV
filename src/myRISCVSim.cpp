@@ -349,6 +349,7 @@ void fetch()
 {
     cycle_no++;
     cout<<"Fetch Instruction:\n";
+    cout<<"pc during fetch: "<<pc<<"\n";
     // stall = DE_EX.Stall;
     // if(cycle_no < 5 && stall > 0 ) DE_EX.Stall -= 1;
     // stall = DE_EX.Stall;
@@ -378,8 +379,8 @@ void fetch()
         }
         else if (IF_DE.curr_inst == exitcode){   swi_exit(); }
     }
-   else if (Fetchflag==2 && EX_MA.check=='T') {Fetchflag=0; cout<<"Branch Stall\n";}
-    else if (Fetchflag==2 && EX_MA.check=='F') {Fetchflag=0; cout<<"Branch Stall\n"; pc-=4;}
+    else if (Fetchflag==2 && EX_MA.check=='T') {Fetchflag=0; cout<<"Branch Stall\n";}
+    else if (Fetchflag==2 && EX_MA.check=='F') {Fetchflag=0; cout<<"Branch Stall\n";pc-=4;}
     else {cout<<"Stalled.\n";}
 }
 
@@ -387,6 +388,7 @@ void fetch()
 void decode()
 {
     cout << "Decode Instruction:\n";
+    cout<<"pc during decode: "<<pc<<"\n";
     // if ((stall+newflag)==0) 
     // {
         bitset<7> op;
@@ -568,6 +570,7 @@ void execute()
 {
     char ch = 'O';
     cout << "Execute Instruction:\n";
+    cout<<"pc during execute: "<<pc<<"\n";
         operand1 = DE_EX.rs1;operand2 = DE_EX.rs2;Type = DE_EX.type;des_reg = DE_EX.rd2;imm = DE_EX.immed; 
         subtype = DE_EX.Subtype;
         if (Type == 'R'){ // add, and, or, sll, slt, sra, srl, sub, xor
@@ -655,13 +658,15 @@ void execute()
         }
             if (subtype == "beq"){
                 if (X[operand1] == X[operand2]){
-                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;}
-                else {pc-=imm;}
+                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;Fetchflag=2;}
+                else {
+                    pc-=imm;
+                    }
                     ch = 'T';
                     cout << "Operand1 and Operand2 are equal hence Adding " << pc << " and " << imm << endl;
-                    pc += imm-4; Fetchflag=2;
+                    pc += imm-4;
                     branch_prediction[DE_EX.progcont] = true;
-                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst=0,DE_EX.progcont = 0;;
+                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0, DE_EX.progcont = 0;
                     Stalls_C+=2; Con_H++;des_res = 0;des_reg = 0; chcycle.push_back(cycle_no-1);
                     //control hazard
                 }
@@ -675,6 +680,9 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        flag=0;
+                        Fetchflag=2;
+                        pc+=abs(imm);pc += 4;
                     }
                     ch = 'F';des_res = 0;des_reg = 0;
                     // pc+=4;
@@ -684,13 +692,15 @@ void execute()
             }
             else if (subtype == "bne"){
                 if (X[operand1] != X[operand2]){
-                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;}
-                else {pc-=imm;}
+                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;Fetchflag=2;}
+                else {
+                    pc-=imm;
+                    }
                     ch = 'T';
                     cout << "Operand1 and operand2 are not equal hence Adding " << pc << " and " << imm << endl;
-                    pc += imm-4; Fetchflag=2;
+                    pc += imm-4;
                     branch_prediction[DE_EX.progcont] = true;
-                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst=0,DE_EX.progcont = 0;
+                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0, DE_EX.progcont = 0;
                     Stalls_C+=2; Con_H++; des_res = 0;des_reg = 0; chcycle.push_back(cycle_no-1);
                     //control hazard
                 }
@@ -704,6 +714,9 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        Fetchflag=2;
+                        pc+=abs(imm);pc += 4;
+                    flag=0;
                     }
                     branch_prediction[DE_EX.progcont] = false;
                     ch = 'F';des_res = 0;des_reg = 0; 
@@ -713,13 +726,15 @@ void execute()
             else if (subtype == "bge"){
                 
                 if (X[operand1] >= X[operand2]){
-                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;}
-                else {pc-=imm;}
+                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;Fetchflag=2;}
+                else {
+                    pc-=imm;
+                    }
                     ch = 'T';
                     cout << "Operand1 is greater than and equal to operand2 hence Adding " << pc << " and " << imm << endl;
-                    pc += imm-4; Fetchflag=2;
+                    pc += imm-4;
                     branch_prediction[DE_EX.progcont] = true;
-                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst=0,DE_EX.progcont = 0;
+                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0,DE_EX.progcont = 0;
                     Stalls_C+=2; Con_H++;des_res = 0;des_reg = 0; chcycle.push_back(cycle_no-1);
                     //control hazard
                 }
@@ -733,9 +748,13 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        flag=0;
+                        Fetchflag=2;
+                        pc+=abs(imm);pc += 4;
                     }
                     branch_prediction[DE_EX.progcont] = false;
                     ch = 'F';des_res = 0;des_reg = 0;
+                    // Fetchflag=2;
                     // pc+=4;
                     cout << "Operand1 is less than operand2 hence Adding " << pc << " and " << 4 << endl;}
             }
@@ -743,14 +762,16 @@ void execute()
                 // pc-=4;
                 
                 if (X[operand1] < X[operand2]){
-                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;}
-                else {pc-=imm;}
+                    if (!branch_prediction[DE_EX.progcont]) {pc-=4;Fetchflag=2;}
+                else {
+                    pc-=imm;
+                    }
                     ch = 'T';
                     cout << "Operand1 is less than operand2 hence Adding " << pc << " and " << imm << endl;
-                    pc += imm-4; Fetchflag=2;
+                    pc += imm-4; 
                     cout<<"pc when branch taken: "<<pc<<"\n";
                     branch_prediction[DE_EX.progcont] = true;
-                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst=0,DE_EX.progcont = 0;
+                    DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0,DE_EX.progcont = 0;
                     Stalls_C+=2; Con_H++; des_res = 0;des_reg = 0; chcycle.push_back(cycle_no-1);
                     //control hazard
                 }
@@ -765,7 +786,12 @@ void execute()
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         cout<<"used branch prediction but was wrong\n";
                         // pc = DE_EX.progcont + 4;
+                        flag=0;
+                        Fetchflag=2;
+                        pc+=abs(imm);
+                        pc += 4;
                     }
+                    
                     branch_prediction[DE_EX.progcont] = false;
                     ch = 'F';des_res = 0;des_reg = 0; 
                     // pc+=4;
