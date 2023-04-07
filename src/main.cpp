@@ -15,8 +15,8 @@ Project Name: Functional Simulator for subset of RISCV Processor
 
 // #include <bits/stdc++.h>
 #include<bits/stdc++.h>
-// #include "myRISCVSim.cpp"
-#include "StalledPipeline.cpp"
+#include "myRISCVSim.cpp"
+// #include "StalledPipeline.cpp"
 // #include "SingleCycle.cpp"
 using namespace std;
 

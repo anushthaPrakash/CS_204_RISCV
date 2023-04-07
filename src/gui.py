@@ -259,13 +259,13 @@ class Ui_MainWindow(object):
                 os.system(string2)
         elif(self.radioBox_3.isChecked()):
             if (os.name == "posix"):  #If the OS used is Ubuntu 
-                string +="\/main.cpp simple_Stalled_Pipeline.cpp -I ../include"
+                string +="\/main.cpp StalledPipeline.cpp -I ../include"
                 string = "g++ " + string
                 os.system(string)
                 string2 += "\/./a.out"
                 os.system(string2)
             elif (os.name == "nt"):   #If the OS used is Windows
-                string +="\main.cpp simple_Stalled_Pipeline.cpp -I ../include"
+                string +="\main.cpp StalledPipeline.cpp -I ../include"
                 string = "g++ " + string
                 os.system(string)
                 string2 += "./a.exe"
@@ -314,10 +314,10 @@ class Ui_MainWindow(object):
                 self.tableWidget_5.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
                 i += 1
             i = 0
-            data5 = open('CountData.mem','r')
+            data5 = open('DH_Cycle.mem','r')
             for i in data5:
                 self.textBrowser_3.append(i)  
-            data5 = open('CountData.mem','r')
+            data5 = open('CH_Cycle.mem','r')
             for i in data5:
                 self.textBrowser_4.append(i)  
         elif(self.radioBox_3.isChecked()):
@@ -330,8 +330,8 @@ class Ui_MainWindow(object):
             data5 = open('DH_Cycle.mem','r')
             for i in data5:
                 self.textBrowser_3.append(i)  
-            data5 = open('CH_Cycle.mem','r')
-            for i in data5:
+            data6 = open('CH_Cycle.mem','r')
+            for i in data6:
                 self.textBrowser_4.append(i)  
             
 

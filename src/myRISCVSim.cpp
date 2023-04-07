@@ -431,8 +431,6 @@ void decode()
                 cout << "Operand1: 0x" << operand1 << ", "<< "Operand2: 0x" << operand2 << ", "<< "RD: 0x" << des_reg << endl;
         
                 if ((operand1 == DE_EX.rd2 || operand2 == DE_EX.rd2) && cycle_no > 2 && DE_EX.rd2 != 0)       {stall = 4;Tall = 4; dhcycle.push_back(cycle_no-1);}
-                else if ((operand1 == MA_WB.rd2 || operand2 == MA_WB.rd2)&& cycle_no > 4 && MA_WB.rd2 != 0)    {stall = 3; Tall = 3; dhcycle.push_back(cycle_no-1);}
-                else if ((operand1 == WBB.rd2 || operand2 == WBB.rd2)&& cycle_no > 5 && WBB.rd2 != 0)    {stall = 2; Tall = 2;  dhcycle.push_back(cycle_no-1);}
                 break;
             }
             case 'I':
@@ -459,7 +457,6 @@ void decode()
                 if (isneg)  {imm = -1 * imm;}
                 cout << "Immediate Value: " << imm << ", "<< "Operand1: 0x" << operand1 << ", "<< "RD: 0x" << des_reg << endl;
                 if (operand1 == DE_EX.rd2 && cycle_no > 2 && DE_EX.rd2 != 0)       {stall = 4;Tall = 4; Stalls_D+=3; Data_H++; dhcycle.push_back(cycle_no-1);DE_EX.Stall = stall-1;}
-                else if (operand1 == MA_WB.rd2 && cycle_no > 4 && MA_WB.rd2 != 0)    {stall = 3;Tall = 3; Stalls_D+=2; Data_H++; dhcycle.push_back(cycle_no-1);EX_MA.Stall = stall-1;}
                 break;
             }
             case 'S':
@@ -476,7 +473,6 @@ void decode()
                 }
                 cout << "Immediate Value: " << imm << ", "<< "Operand1: 0x" << operand1 << ", "<< "Operand2: 0x" << operand2 << endl; 
                 if ((operand1 == DE_EX.rd2 || operand2 == DE_EX.rd2) && DE_EX.rd2 != 0)      { stall = 4; Tall = 4; Stalls_D+=3; Data_H++; dhcycle.push_back(cycle_no-1);DE_EX.Stall = stall-1;}
-                else if (operand1 == MA_WB.rd2 || operand2 == MA_WB.rd2 && MA_WB.rd2 != 0)    {stall = 3; Tall = 3; Stalls_D+=2; Data_H++; dhcycle.push_back(cycle_no-1);EX_MA.Stall = stall-1;}
                 break;
             }
             case 'B':
@@ -505,7 +501,6 @@ void decode()
                 if (isneg){ imm = -1 * imm; }
                 cout << "Immediate Value: " << imm << ", " << "Operand1: 0x" << operand1 << ", "<< "Operand2: 0x" << operand2 << endl;
                 if ((operand1 == DE_EX.rd2 || operand2 == DE_EX.rd2) && DE_EX.rd2 != 0)   { stall = 4; Tall = 4; Stalls_D+=3; Data_H++; dhcycle.push_back(cycle_no-1);DE_EX.Stall = stall-1;}
-                else if ((operand1 == MA_WB.rd2 || operand2 == MA_WB.rd2) && MA_WB.rd2 != 0)   {stall = 3; Tall = 3; Stalls_D+=2; Data_H++; dhcycle.push_back(cycle_no-1); EX_MA.Stall = stall-1;}
                 if (branch_prediction[addr]) {pc += (imm - 4);flag=1;cout<<"branch predicted\n";}
                 break;
             }
