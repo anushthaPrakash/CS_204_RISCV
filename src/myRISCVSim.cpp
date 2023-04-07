@@ -769,7 +769,7 @@ void execute()
                     ch = 'T';
                     cout << "Operand1 is less than operand2 hence Adding " << pc << " and " << imm << endl;
                     pc += imm-4; 
-                    cout<<"pc when branch taken: "<<pc<<"\n";
+                    // cout<<"pc when branch taken: "<<pc<<"\n";
                     branch_prediction[DE_EX.progcont] = true;
                     DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0,DE_EX.progcont = 0;
                     Stalls_C+=2; Con_H++; des_res = 0;des_reg = 0; chcycle.push_back(cycle_no-1);
