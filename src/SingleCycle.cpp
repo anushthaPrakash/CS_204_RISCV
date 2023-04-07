@@ -30,6 +30,7 @@ string subtype; // subtype of the instruction
 static int imm; // immediate value if a immediate instruction
 static int  pc = 0; // PC value 
 unsigned int sz = 0; // total number of instructions in the assembly program
+//single cycle
 
 // determing the type pf the instruction 
 char op_R_type(bitset<7> op)
