@@ -1,0 +1,1102 @@
+
+CYCLE NUMBER: 1
+Fetch Instruction:
+Fetching 0xb3 from address 0x0
+
+CYCLE NUMBER: 2
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x0, Operand2: 0x0, RD: 0x1
+The operation is add.
+Fetch Instruction:
+Fetching 0x100113 from address 0x4
+
+CYCLE NUMBER: 3
+Execute Instruction:
+Adding 0 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x0, RD: 0x2
+The operation is addi.
+Fetch Instruction:
+Fetching 0x700193 from address 0x8
+
+CYCLE NUMBER: 4
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 0 and 1
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 7, Operand1: 0x0, RD: 0x3
+The operation is addi.
+Fetch Instruction:
+Fetching 0x221c063 from address 0xc
+
+CYCLE NUMBER: 5
+WriteBack Instruction:
+Storing 0 into 0x1
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 0 and 7
+Decode Instruction:
+Format of instruction: B
+Immediate Value: 32, Operand1: 0x3, Operand2: 0x2
+The operation is blt.
+Fetch Instruction:
+Fetching 0x100213 from address 0x10
+
+CYCLE NUMBER: 6
+WriteBack Instruction:
+Storing 1 into 0x2
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 7
+WriteBack Instruction:
+Storing 7 into 0x3
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 8
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 9
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is greater than and equal to operand2 hence Adding 16 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x0, RD: 0x4
+The operation is addi.
+Fetch Instruction:
+Fetching 0x2082b3 from address 0x14
+
+CYCLE NUMBER: 10
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 0 and 1
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x1, Operand2: 0x2, RD: 0x5
+The operation is add.
+Fetch Instruction:
+Fetching 0x100b3 from address 0x18
+
+CYCLE NUMBER: 11
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 0 and 1
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x0, RD: 0x1
+The operation is add.
+Fetch Instruction:
+Fetching 0x28133 from address 0x1c
+
+CYCLE NUMBER: 12
+WriteBack Instruction:
+Storing 1 into 0x4
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 1 and 0
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x5, Operand2: 0x0, RD: 0x2
+The operation is add.
+Fetch Instruction:
+Fetching 0x120213 from address 0x20
+
+CYCLE NUMBER: 13
+WriteBack Instruction:
+Storing 1 into 0x5
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 14
+WriteBack Instruction:
+Storing 1 into 0x1
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 15
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 1 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x4, RD: 0x4
+The operation is addi.
+Fetch Instruction:
+Fetching 0xfe3248e3 from address 0x24
+
+CYCLE NUMBER: 16
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 1 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -16, Operand1: 0x4, Operand2: 0x3
+The operation is blt.
+Fetch Instruction:
+Fetching 0x325463 from address 0x28
+
+CYCLE NUMBER: 17
+WriteBack Instruction:
+Storing 1 into 0x2
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 18
+WriteBack Instruction:
+Storing 2 into 0x4
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 19
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 20
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is less than operand2 hence Adding 36 and -16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Branch Stall
+
+CYCLE NUMBER: 21
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Fetching 0x2082b3 from address 0x14
+
+CYCLE NUMBER: 22
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x1, Operand2: 0x2, RD: 0x5
+The operation is add.
+Fetch Instruction:
+Fetching 0x100b3 from address 0x18
+
+CYCLE NUMBER: 23
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 1 and 1
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x0, RD: 0x1
+The operation is add.
+Fetch Instruction:
+Fetching 0x28133 from address 0x1c
+
+CYCLE NUMBER: 24
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 1 and 0
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x5, Operand2: 0x0, RD: 0x2
+The operation is add.
+Fetch Instruction:
+Fetching 0x120213 from address 0x20
+
+CYCLE NUMBER: 25
+WriteBack Instruction:
+Storing 2 into 0x5
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 26
+WriteBack Instruction:
+Storing 1 into 0x1
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 27
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 2 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x4, RD: 0x4
+The operation is addi.
+Fetch Instruction:
+Fetching 0xfe3248e3 from address 0x24
+
+CYCLE NUMBER: 28
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 2 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -16, Operand1: 0x4, Operand2: 0x3
+The operation is blt.
+Fetch Instruction:
+Fetching 0x325463 from address 0x28
+
+CYCLE NUMBER: 29
+WriteBack Instruction:
+Storing 2 into 0x2
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 30
+WriteBack Instruction:
+Storing 3 into 0x4
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 31
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 32
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is less than operand2 hence Adding 36 and -16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Branch Stall
+
+CYCLE NUMBER: 33
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Fetching 0x2082b3 from address 0x14
+
+CYCLE NUMBER: 34
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x1, Operand2: 0x2, RD: 0x5
+The operation is add.
+Fetch Instruction:
+Fetching 0x100b3 from address 0x18
+
+CYCLE NUMBER: 35
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 1 and 2
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x0, RD: 0x1
+The operation is add.
+Fetch Instruction:
+Fetching 0x28133 from address 0x1c
+
+CYCLE NUMBER: 36
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 2 and 0
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x5, Operand2: 0x0, RD: 0x2
+The operation is add.
+Fetch Instruction:
+Fetching 0x120213 from address 0x20
+
+CYCLE NUMBER: 37
+WriteBack Instruction:
+Storing 3 into 0x5
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 38
+WriteBack Instruction:
+Storing 2 into 0x1
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 39
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 3 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x4, RD: 0x4
+The operation is addi.
+Fetch Instruction:
+Fetching 0xfe3248e3 from address 0x24
+
+CYCLE NUMBER: 40
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 3 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -16, Operand1: 0x4, Operand2: 0x3
+The operation is blt.
+Fetch Instruction:
+Fetching 0x325463 from address 0x28
+
+CYCLE NUMBER: 41
+WriteBack Instruction:
+Storing 3 into 0x2
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 42
+WriteBack Instruction:
+Storing 4 into 0x4
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 43
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 44
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is less than operand2 hence Adding 36 and -16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Branch Stall
+
+CYCLE NUMBER: 45
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Fetching 0x2082b3 from address 0x14
+
+CYCLE NUMBER: 46
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x1, Operand2: 0x2, RD: 0x5
+The operation is add.
+Fetch Instruction:
+Fetching 0x100b3 from address 0x18
+
+CYCLE NUMBER: 47
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 2 and 3
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x0, RD: 0x1
+The operation is add.
+Fetch Instruction:
+Fetching 0x28133 from address 0x1c
+
+CYCLE NUMBER: 48
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 3 and 0
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x5, Operand2: 0x0, RD: 0x2
+The operation is add.
+Fetch Instruction:
+Fetching 0x120213 from address 0x20
+
+CYCLE NUMBER: 49
+WriteBack Instruction:
+Storing 5 into 0x5
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 50
+WriteBack Instruction:
+Storing 3 into 0x1
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 51
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 5 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x4, RD: 0x4
+The operation is addi.
+Fetch Instruction:
+Fetching 0xfe3248e3 from address 0x24
+
+CYCLE NUMBER: 52
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 4 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -16, Operand1: 0x4, Operand2: 0x3
+The operation is blt.
+Fetch Instruction:
+Fetching 0x325463 from address 0x28
+
+CYCLE NUMBER: 53
+WriteBack Instruction:
+Storing 5 into 0x2
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 54
+WriteBack Instruction:
+Storing 5 into 0x4
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 55
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 56
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is less than operand2 hence Adding 36 and -16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Branch Stall
+
+CYCLE NUMBER: 57
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Fetching 0x2082b3 from address 0x14
+
+CYCLE NUMBER: 58
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x1, Operand2: 0x2, RD: 0x5
+The operation is add.
+Fetch Instruction:
+Fetching 0x100b3 from address 0x18
+
+CYCLE NUMBER: 59
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 3 and 5
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x0, RD: 0x1
+The operation is add.
+Fetch Instruction:
+Fetching 0x28133 from address 0x1c
+
+CYCLE NUMBER: 60
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 5 and 0
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x5, Operand2: 0x0, RD: 0x2
+The operation is add.
+Fetch Instruction:
+Fetching 0x120213 from address 0x20
+
+CYCLE NUMBER: 61
+WriteBack Instruction:
+Storing 8 into 0x5
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 62
+WriteBack Instruction:
+Storing 5 into 0x1
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 63
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x4, RD: 0x4
+The operation is addi.
+Fetch Instruction:
+Fetching 0xfe3248e3 from address 0x24
+
+CYCLE NUMBER: 64
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 5 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -16, Operand1: 0x4, Operand2: 0x3
+The operation is blt.
+Fetch Instruction:
+Fetching 0x325463 from address 0x28
+
+CYCLE NUMBER: 65
+WriteBack Instruction:
+Storing 8 into 0x2
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 66
+WriteBack Instruction:
+Storing 6 into 0x4
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 67
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 68
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is less than operand2 hence Adding 36 and -16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Branch Stall
+
+CYCLE NUMBER: 69
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+Fetch Instruction:
+Fetching 0x2082b3 from address 0x14
+
+CYCLE NUMBER: 70
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x1, Operand2: 0x2, RD: 0x5
+The operation is add.
+Fetch Instruction:
+Fetching 0x100b3 from address 0x18
+
+CYCLE NUMBER: 71
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 5 and 8
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x0, RD: 0x1
+The operation is add.
+Fetch Instruction:
+Fetching 0x28133 from address 0x1c
+
+CYCLE NUMBER: 72
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 8 and 0
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x5, Operand2: 0x0, RD: 0x2
+The operation is add.
+Fetch Instruction:
+Fetching 0x120213 from address 0x20
+
+CYCLE NUMBER: 73
+WriteBack Instruction:
+Storing 13 into 0x5
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 74
+WriteBack Instruction:
+Storing 8 into 0x1
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 75
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 13 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x4, RD: 0x4
+The operation is addi.
+Fetch Instruction:
+Fetching 0xfe3248e3 from address 0x24
+
+CYCLE NUMBER: 76
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Adding 6 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -16, Operand1: 0x4, Operand2: 0x3
+The operation is blt.
+Fetch Instruction:
+Fetching 0x325463 from address 0x28
+
+CYCLE NUMBER: 77
+WriteBack Instruction:
+Storing 13 into 0x2
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 78
+WriteBack Instruction:
+Storing 7 into 0x4
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 79
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 80
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is greater than and equal to operand2 hence Adding 40 and 4
+Decode Instruction:
+Format of instruction: B
+Immediate Value: 8, Operand1: 0x4, Operand2: 0x3
+The operation is bge.
+Fetch Instruction:
+Fetching 0x133 from address 0x2c
+
+CYCLE NUMBER: 81
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 82
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 83
+WriteBack Instruction:
+Stalled.
+Memory Instruction:
+Stalled.
+Execute Instruction:
+Stalled.
+Decode Instruction:
+Stalled.
+Fetch Instruction:
+Stalled.
+
+CYCLE NUMBER: 84
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Operand1 is greater than and equal to operand2 hence Adding 40 and 8
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is bge.
+Fetch Instruction:
+Branch Stall
+
+CYCLE NUMBER: 85
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is bge.
+Fetch Instruction:
+Fetching 0xef000011 from address 0x30
+
+CYCLE NUMBER: 86
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+Execute Instruction:
+
+CYCLE NUMBER: 87
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+
+CYCLE NUMBER: 88
+WriteBack Instruction:
+Storing 0 into 0x0
