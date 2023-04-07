@@ -349,7 +349,7 @@ void fetch()
 {
     cycle_no++;
     cout<<"Fetch Instruction:\n";
-    cout<<"pc during fetch: "<<pc<<"\n";
+    // cout<<"pc during fetch: "<<pc<<"\n";
     // stall = DE_EX.Stall;
     // if(cycle_no < 5 && stall > 0 ) DE_EX.Stall -= 1;
     // stall = DE_EX.Stall;
@@ -388,7 +388,7 @@ void fetch()
 void decode()
 {
     cout << "Decode Instruction:\n";
-    cout<<"pc during decode: "<<pc<<"\n";
+    // cout<<"pc during decode: "<<pc<<"\n";
     // if ((stall+newflag)==0) 
     // {
         bitset<7> op;
@@ -570,7 +570,7 @@ void execute()
 {
     char ch = 'O';
     cout << "Execute Instruction:\n";
-    cout<<"pc during execute: "<<pc<<"\n";
+    // cout<<"pc during execute: "<<pc<<"\n";
         operand1 = DE_EX.rs1;operand2 = DE_EX.rs2;Type = DE_EX.type;des_reg = DE_EX.rd2;imm = DE_EX.immed; 
         subtype = DE_EX.Subtype;
         if (Type == 'R'){ // add, and, or, sll, slt, sra, srl, sub, xor
