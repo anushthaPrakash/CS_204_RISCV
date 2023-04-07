@@ -7,8 +7,10 @@ from PyQt5.QtCore import QRect
 import qdarkstyle
 from qdarkstyle.dark.palette import DarkPalette
 import webbrowser
+import inp
 
 class Ui_MainWindow(object):
+    pipeline = 0
     def setupUi(self, MainWindow):
         self.currentTheme = "L"
         MainWindow.setObjectName("MainWindow")
@@ -79,7 +81,7 @@ class Ui_MainWindow(object):
         self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_6.setGeometry(QtCore.QRect(385, 120, 101, 31))
         self.pushButton_6.setObjectName("pushButton_6")
-        self.textBrowser_2 = QtWidgets.QTextBrowser(self.centralwidget) #text box of output log
+        self.textBrowser_2 = QtWidgets.QTextBrowser(self.centralwidget) #text box of assemble log
         self.textBrowser_2.setGeometry(QtCore.QRect(305, 160, 271, 61))
         self.textBrowser_2.setObjectName("textBrowser_2")
 
@@ -113,6 +115,73 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         font = QtGui.QFont()
         font.setPointSize(11)
+
+        #for pipelining 
+        self.tableWidget_4 = QtWidgets.QTableWidget(self.centralwidget) #for block diagram
+        self.tableWidget_4.setGeometry(QtCore.QRect(940, 370, 381, 237))
+        self.tableWidget_4.setRowCount(5)
+        self.tableWidget_4.setColumnCount(2000)
+        self.tableWidget_4.setObjectName("tableWidget_4")
+        self.tableWidget_4.setColumnWidth(0,40)
+        for i in range(self.tableWidget_4.columnCount()):
+            self.tableWidget_4.setColumnWidth(i, 40)
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(960, 340, 338, 30))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.label_8.setFont(font)
+        self.label_8.setObjectName("label_8")
+        self.textBrowser_3 = QtWidgets.QTextBrowser(self.centralwidget) #text box of assemble log
+        self.textBrowser_3.setGeometry(QtCore.QRect(935, 160, 191, 161))
+        self.textBrowser_3.setObjectName("textBrowser_3")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(960, 130, 138, 30))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.label_9.setFont(font)
+        self.label_9.setObjectName("label_9")
+        self.textBrowser_4 = QtWidgets.QTextBrowser(self.centralwidget) #text box of assemble log
+        self.textBrowser_4.setGeometry(QtCore.QRect(1135, 160, 191, 161))
+        self.textBrowser_4.setObjectName("textBrowser_4")
+        self.label_10 = QtWidgets.QLabel(self.centralwidget)
+        self.label_10.setGeometry(QtCore.QRect(1160, 130, 138, 30))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.label_10.setFont(font)
+        self.label_10.setObjectName("label_10")
+        self.tableWidget_5 = QtWidgets.QTableWidget(self.centralwidget) #for all stats
+        self.tableWidget_5.setGeometry(QtCore.QRect(940, 640, 381, 237))
+        self.tableWidget_5.setRowCount(12)
+        self.tableWidget_5.setColumnCount(1)
+        self.tableWidget_5.setObjectName("tableWidget_4")
+        self.tableWidget_5.setColumnWidth(0,320)
+        self.label_11 = QtWidgets.QLabel(self.centralwidget)
+        self.label_11.setGeometry(QtCore.QRect(1080, 605, 142, 30))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.label_11.setFont(font)
+        self.label_11.setObjectName("label_10")
+
+        #check box work
+        self.radioBox_4 = QRadioButton(self.centralwidget)
+        self.radioBox_4.setObjectName(u"radioBox_4")
+        self.radioBox_4.setGeometry(QRect(1130, 63, 62, 17))
+        self.radioBox_4.setFont(QtGui.QFont("sanserif", 11))
+        self.radioBox_2 = QRadioButton(self.centralwidget)
+        self.radioBox_2.setObjectName(u"radioBox_2")
+        self.radioBox_2.setGeometry(QRect(1180, 100, 62, 17))
+        self.radioBox_2.setFont(QtGui.QFont("sanserif", 11))
+        self.radioBox_3 = QRadioButton(self.centralwidget)
+        self.radioBox_3.setObjectName(u"radioBox_3")
+        self.radioBox_3.setGeometry(QRect(960, 100, 62, 17))
+        self.radioBox_3.setFont(QtGui.QFont("sanserif", 11))
+        self.radioBox_2.hide()
+        self.radioBox_3.hide()
+        self.checkBox = QPushButton(self.centralwidget)
+        self.checkBox.setObjectName(u"checkBox")
+        self.checkBox.setGeometry(QRect(960, 60, 82, 17))
+        self.checkBox.setFont(QtGui.QFont("sanserif", 11))
+        self.checkBox.setStyleSheet("background-color : red")
         self.retranslateUi(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -131,12 +200,25 @@ class Ui_MainWindow(object):
         self.pushButton_6.setText(_translate("MainWindow", "ASSEMBLE"))
         self.label_5.setText(_translate("MainWindow", "PC :"))
         self.label_6.setText(_translate("MainWindow", "IR :"))
+        self.label_8.setText(_translate("MainWindow", "Block diagram of 5 pipeline stages"))
+        self.label_9.setText(_translate("MainWindow", "D_H Cycles"))
+        self.label_10.setText(_translate("MainWindow", "C_H Cycles"))
+        self.label_11.setText(_translate("MainWindow", "ALL STATS"))
+        self.checkBox.setText(_translate("MainWindow", u"Pipelined Execution", None))
+        self.radioBox_3.setText(_translate("MainWindow", u"Data Forwarding", None))
+        self.radioBox_2.setText(_translate("MainWindow", u"Stalling", None))
+        self.radioBox_4.setText(_translate("MainWindow", u"Single Cycle", None))
         self.label.adjustSize()
         self.label_2.adjustSize()
         self.label_3.adjustSize()
         self.label_4.adjustSize()
         self.label_5.adjustSize()
         self.label_6.adjustSize()
+        self.checkBox.adjustSize()
+        self.radioBox_2.adjustSize()
+        self.radioBox_3.adjustSize()
+        self.radioBox_4.adjustSize()
+        self.radioBox_4.setChecked(True)
         self.pushButton_2.clicked.connect(lambda: self.opendata())
         self.pushButton.clicked.connect(lambda: self.guihelp())
         self.pushButton_4.clicked.connect(lambda: self.outputlog())
@@ -144,45 +226,114 @@ class Ui_MainWindow(object):
         self.pushButton_6.clicked.connect(lambda: self.assembly())
         self.pushButton_5.clicked.connect(lambda: self.step())
         self.pushButton_3.clicked.connect(lambda: self.run())
+        self.checkBox.clicked.connect(lambda: self.pipelining())
     
+    def pipelining(self):
+        if(self.pipeline):
+            self.pipeline=0
+            self.radioBox_2.setHidden(True)
+            self.radioBox_3.setHidden(True)
+            self.checkBox.setStyleSheet("background-color : red")
+        else:
+            self.radioBox_2.setHidden(False)
+            self.radioBox_3.setHidden(False)
+            self.radioBox_4.setHidden(False)
+            self.pipeline=1
+            self.checkBox.setStyleSheet("background-color : green")
+
     def assembly(self):
         string=os.path.abspath(os.getcwd())
         string2 = string  
-        if (os.name == "posix"):  #If the OS used is Ubuntu 
-            string +="\/main.cpp myRISCVSim.cpp -I ../include"
-            string = "g++ " + string
-            os.system(string)
-            string2 += "\/./a.out"
-            os.system(string2)
-        elif (os.name == "nt"):   #If the OS used is Windows
-            string +="\main.cpp myRISCVSim.cpp -I ../include"
-            string = "g++ " + string
-            os.system(string)
-            string2 += "./a.exe"
-            os.system(string2)
+        if(self.radioBox_2.isChecked()):
+            if (os.name == "posix"):  #If the OS used is Ubuntu 
+                string +="\/main.cpp myRISCVSim.cpp -I ../include"
+                string = "g++ " + string
+                os.system(string)
+                string2 += "\/./a.out"
+                os.system(string2)
+            elif (os.name == "nt"):   #If the OS used is Windows
+                string +="\main.cpp myRISCVSim.cpp -I ../include"
+                string = "g++ " + string
+                os.system(string)
+                string2 += "./a.exe"
+                os.system(string2)
+        elif(self.radioBox_3.isChecked()):
+            if (os.name == "posix"):  #If the OS used is Ubuntu 
+                string +="\/main.cpp simple_Stalled_Pipeline.cpp -I ../include"
+                string = "g++ " + string
+                os.system(string)
+                string2 += "\/./a.out"
+                os.system(string2)
+            elif (os.name == "nt"):   #If the OS used is Windows
+                string +="\main.cpp simple_Stalled_Pipeline.cpp -I ../include"
+                string = "g++ " + string
+                os.system(string)
+                string2 += "./a.exe"
+                os.system(string2)  
+        else:
+            if (os.name == "posix"):  #If the OS used is Ubuntu 
+                string +="\/main.cpp SingleCycle.cpp -I ../include"
+                string = "g++ " + string
+                os.system(string)
+                string2 += "\/./a.out"
+                os.system(string2)
+            elif (os.name == "nt"):   #If the OS used is Windows
+                string +="\main.cpp SingleCycle.cpp -I ../include"
+                string = "g++ " + string
+                os.system(string)
+                string2 += "./a.exe"
+                os.system(string2)
         self.textBrowser_2.append("Ready to run!!!!")
     
     def guihelp(self):
         webbrowser.open('https://github.com/anushthaPrakash/CS_204_RISCV')
 
     def run(self):
-            data=open('output_log.mem','r')
-            for i in data:
-                self.textBrowser.append(i)
+        data=open('output_log.mem','r')
+        for i in data:
+            self.textBrowser.append(i)
 
-            data2 = open('register.mem','r')
-            i = 0
-            for item in data2:
-                temp2=str(item)
-                self.tableWidget.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
-                i += 1
+        data2 = open('register.mem','r')
+        i = 0
+        for item in data2:
+            temp2=str(item)
+            self.tableWidget.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
+            i += 1
 
-            i =0
-            data3 = open('D_Memory.mem','r')
-            for item2 in data3:
+        i =0
+        data3 = open('D_Memory.mem','r')
+        for item2 in data3:
+            temp2=str(item2)
+            self.tableWidget_2.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
+            i += 1
+        i =0
+        if(self.radioBox_2.isChecked()):
+            data4 = open('CountData.mem','r')
+            for item2 in data4:
                 temp2=str(item2)
-                self.tableWidget_2.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
+                self.tableWidget_5.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
                 i += 1
+            i = 0
+            data5 = open('CountData.mem','r')
+            for i in data5:
+                self.textBrowser_3.append(i)  
+            data5 = open('CountData.mem','r')
+            for i in data5:
+                self.textBrowser_4.append(i)  
+        elif(self.radioBox_3.isChecked()):
+            data4 = open('CountData.mem','r')
+            for item2 in data4:
+                temp2=str(item2)
+                self.tableWidget_5.setItem(i,0,QtWidgets.QTableWidgetItem(temp2))
+                i += 1
+            i = 0
+            data5 = open('DH_Cycle.mem','r')
+            for i in data5:
+                self.textBrowser_3.append(i)  
+            data5 = open('CH_Cycle.mem','r')
+            for i in data5:
+                self.textBrowser_4.append(i)  
+            
 
     def changeTheme(self):
         if self.currentTheme == "L":

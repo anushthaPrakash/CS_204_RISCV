@@ -12,7 +12,7 @@ myRISCVSim.cpp
     Purpose of this file: implementation file for myRISCVSim
 */
 
-#include <bits/stdc++.h>
+# include <bits/stdc++.h>
 #define N 1000
 using namespace std;
 
@@ -429,9 +429,9 @@ void decode()
                 des_reg = rd.to_ulong(); // converting the binary string to unsigned decimal to get the destination register
                 cout << "Operand1: 0x" << operand1 << ", "<< "Operand2: 0x" << operand2 << ", "<< "RD: 0x" << des_reg << endl;
         
-                if ((operand1 == DE_EX.rd2 || operand2 == DE_EX.rd2) && cycle_no > 2 && DE_EX.rd2 != 0)       {stall = 4;Tall = 4; Stalls_D+=3; Data_H++; dhcycle.push_back(cycle_no-1);}
-                else if ((operand1 == MA_WB.rd2 || operand2 == MA_WB.rd2)&& cycle_no > 4 && MA_WB.rd2 != 0)    {stall = 3; Tall = 3; Stalls_D+=2; Data_H++; dhcycle.push_back(cycle_no-1);}
-                else if ((operand1 == WBB.rd2 || operand2 == WBB.rd2)&& cycle_no > 5 && WBB.rd2 != 0)    {stall = 2; Tall = 2; Stalls_D+=1; Data_H++; dhcycle.push_back(cycle_no-1);}
+                if ((operand1 == DE_EX.rd2 || operand2 == DE_EX.rd2) && cycle_no > 2 && DE_EX.rd2 != 0)       {stall = 4;Tall = 4; dhcycle.push_back(cycle_no-1);}
+                else if ((operand1 == MA_WB.rd2 || operand2 == MA_WB.rd2)&& cycle_no > 4 && MA_WB.rd2 != 0)    {stall = 3; Tall = 3; dhcycle.push_back(cycle_no-1);}
+                else if ((operand1 == WBB.rd2 || operand2 == WBB.rd2)&& cycle_no > 5 && WBB.rd2 != 0)    {stall = 2; Tall = 2;  dhcycle.push_back(cycle_no-1);}
                 break;
             }
             case 'I':
