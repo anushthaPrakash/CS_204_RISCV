@@ -24,6 +24,7 @@ static unsigned int X[32];     // 32 registers
 static unsigned int MEM[4000]; // Instruction memory
 static int DMEM[1000000];      // give lui in range of 0x00010 (Data memory)
 bool branch_prediction[N];
+int mispredictions=0;
 static unsigned int instruction_word;
 static unsigned int operand1;
 static unsigned int operand2;
@@ -680,6 +681,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         flag=0;
                         Fetchflag=2;
                         pc+=abs(imm);pc += 4;
@@ -714,6 +717,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         Fetchflag=2;
                         pc+=abs(imm);pc += 4;
                     flag=0;
@@ -748,6 +753,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         flag=0;
                         Fetchflag=2;
                         pc+=abs(imm);pc += 4;
@@ -785,6 +792,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         cout<<"used branch prediction but was wrong\n";
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         // pc = DE_EX.progcont + 4;
                         flag=0;
                         Fetchflag=2;
