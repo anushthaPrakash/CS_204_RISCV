@@ -24,6 +24,7 @@ static unsigned int X[32];     // 32 registers
 static unsigned int MEM[4000]; // Instruction memory
 static int DMEM[1000000];      // give lui in range of 0x00010 (Data memory)
 bool branch_prediction[N];
+int mispredictions=0;
 static unsigned int instruction_word;
 static unsigned int operand1;
 static unsigned int operand2;
@@ -230,12 +231,12 @@ void load_randata()
     fprintf(fp, "Data transfer instructions = %d                                                  \n", Ld_St);
     fprintf(fp, "ALU instructions = %d                                                            \n", ALU_inst);
     fprintf(fp, "Cntrol instructions = %d                                                         \n", Control_inst);
-    fprintf(fp, "Total stalls = %d                                                                \n", (Stalls_C+Stalls_D));
-    fprintf(fp, "Data hazards found = %d                                                          \n", Data_H);
-    fprintf(fp, "Control hazards found = %d                                                       \n", Con_H);
+    fprintf(fp, "Total stalls = %d                                                                \n", 0);
+    fprintf(fp, "Data hazards found = %d                                                          \n", 0);
+    fprintf(fp, "Control hazards found = %d                                                       \n", 0);
     fprintf(fp, "Branch mispredictions = %d                                                       \n", Branch_Mis);
-    fprintf(fp, "Data hazard stalls = %d                                                          \n", Stalls_D);
-    fprintf(fp, "Control hazard stalls = %d                                                       \n", Stalls_C);
+    fprintf(fp, "Data hazard stalls = %d                                                          \n", 0);
+    fprintf(fp, "Control hazard stalls = %d                                                       \n", 0);
     fclose(fp);
 }
 
@@ -349,7 +350,7 @@ void fetch()
 {
     cycle_no++;
     cout<<"Fetch Instruction:\n";
-    cout<<"pc during fetch: "<<pc<<"\n";
+    // cout<<"pc during fetch: "<<pc<<"\n";
     // stall = DE_EX.Stall;
     // if(cycle_no < 5 && stall > 0 ) DE_EX.Stall -= 1;
     // stall = DE_EX.Stall;
@@ -388,7 +389,7 @@ void fetch()
 void decode()
 {
     cout << "Decode Instruction:\n";
-    cout<<"pc during decode: "<<pc<<"\n";
+    // cout<<"pc during decode: "<<pc<<"\n";
     // if ((stall+newflag)==0) 
     // {
         bitset<7> op;
@@ -570,7 +571,7 @@ void execute()
 {
     char ch = 'O';
     cout << "Execute Instruction:\n";
-    cout<<"pc during execute: "<<pc<<"\n";
+    // cout<<"pc during execute: "<<pc<<"\n";
         operand1 = DE_EX.rs1;operand2 = DE_EX.rs2;Type = DE_EX.type;des_reg = DE_EX.rd2;imm = DE_EX.immed; 
         subtype = DE_EX.Subtype;
         if (Type == 'R'){ // add, and, or, sll, slt, sra, srl, sub, xor
@@ -680,6 +681,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         flag=0;
                         Fetchflag=2;
                         pc+=abs(imm);pc += 4;
@@ -714,6 +717,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         Fetchflag=2;
                         pc+=abs(imm);pc += 4;
                     flag=0;
@@ -748,6 +753,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         // pc = DE_EX.progcont + 4;
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         flag=0;
                         Fetchflag=2;
                         pc+=abs(imm);pc += 4;
@@ -769,7 +776,7 @@ void execute()
                     ch = 'T';
                     cout << "Operand1 is less than operand2 hence Adding " << pc << " and " << imm << endl;
                     pc += imm-4; 
-                    cout<<"pc when branch taken: "<<pc<<"\n";
+                    // cout<<"pc when branch taken: "<<pc<<"\n";
                     branch_prediction[DE_EX.progcont] = true;
                     DE_EX.rs1 = 0; DE_EX.rs2 = 0; DE_EX.rd2 = 0; DE_EX.type = '0'; DE_EX.Subtype = "", DE_EX.immed = 0,DE_EX.progcont = 0;
                     Stalls_C+=2; Con_H++; des_res = 0;des_reg = 0; chcycle.push_back(cycle_no-1);
@@ -785,6 +792,8 @@ void execute()
                         DE_EX.progcont = 0;
                         DE_EX.Subtype = "", DE_EX.immed = 0, IF_DE.curr_inst = 0, IF_DE.progcont = 0;
                         cout<<"used branch prediction but was wrong\n";
+                        mispredictions++;
+                        cout<<"Total Mispredictions: "<<mispredictions<<"\n";
                         // pc = DE_EX.progcont + 4;
                         flag=0;
                         Fetchflag=2;
@@ -906,6 +915,6 @@ void run_riscvsim()
     load_randata();
     load_register();
     load_Memory();
-    load_dhazards();
-    load_chazards();
+    //load_dhazards();
+    //load_chazards();
 }
