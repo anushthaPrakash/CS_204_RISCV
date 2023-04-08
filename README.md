@@ -123,6 +123,17 @@ Check the generated folder for details of compilation. It contains:
   <img src="pics/4.png" alt="Logo" width="1080" height="500">
 </p>
 
+<h3>Windows View for phase 2</h3>
+<p align="center">
+  <img src="pics/5.png" alt="Logo" width="1080" height="500">
+</p>
+<p align="center">
+  <img src="pics/6.png" alt="Logo" width="1080" height="500">
+</p>
+<p align="center">
+  <img src="pics/7.png" alt="Logo" width="1080" height="500">
+</p>
+
 <h2 id="contributors">Contributors</h2>
 
 <div align="center">
