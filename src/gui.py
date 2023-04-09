@@ -289,6 +289,9 @@ class Ui_MainWindow(object):
 
     def run(self):
         self.textBrowser.clear()
+        self.tableWidget_5.clear()
+        self.textBrowser_3.clear()
+        self.textBrowser_4.clear()
         data=open('output_log.mem','r')
         for i in data:
             self.textBrowser.append(i)
