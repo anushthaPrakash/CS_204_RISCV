@@ -808,13 +808,15 @@ void run_riscvsim()
         else{
             if (cycle_no<=4) {cycle_no++; rflag++;}
             int finish = cycle_no + 3 + STALL; if (rflag==1) {cycle_no--; rflag--;}
-            while (finish != cycle_no)
-            { cout<<endl; cout << "CYCLE NUMBER: " <<dec << cycle_no << endl;
-                if (cycle_no < finish && cycle_no>4) {write_back(); T_inst++;}
-                if (cycle_no < finish - 1) {mem(); T_inst++;}
-                if (cycle_no < finish - 2) {execute(); T_inst++;}
-                if (cycle_no < finish - 3) {decode(); T_inst++;}
-                cycle_no++;
+            if(DE.EX.Stall > 0){ finish++;
+                while (finish != cycle_no)
+                { cout<<endl; cout << "CYCLE NUMBER: " <<dec << cycle_no << endl;
+                    if (cycle_no < finish && cycle_no>4) {write_back(); T_inst++;}
+                    if (cycle_no < finish - 1) {mem(); T_inst++;}
+                    if (cycle_no < finish - 2) {execute(); T_inst++;}
+                    if (cycle_no < finish - 3) {decode(); T_inst++;}
+                    cycle_no++;
+                }
             }
             cycle_no--;
             break;
