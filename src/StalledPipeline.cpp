@@ -818,6 +818,16 @@ void run_riscvsim()
                     cycle_no++;
                 }
             }
+            else {
+                while (finish != cycle_no)
+                { cout<<endl; cout << "CYCLE NUMBER: " <<dec << cycle_no << endl;
+                    if (cycle_no < finish && cycle_no>4) {write_back(); T_inst++;}
+                    if (cycle_no < finish - 1) {mem(); T_inst++;}
+                    if (cycle_no < finish - 2) {execute(); T_inst++;}
+                    if (cycle_no < finish - 3) {decode(); T_inst++;}
+                    cycle_no++;
+                }
+            }
             cycle_no--;
             break;
         }
