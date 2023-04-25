@@ -1,0 +1,5458 @@
+Enter Cache size in Bytes: Enter Block Size in Bytes: Direct mapped (DM)/Full Assoc (FA)/ Set Assoc(SA) : 
+CYCLE NUMBER: 1
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 2
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x102b7 from address 0x0
+
+CYCLE NUMBER: 3
+Execute Instruction:
+Decode Instruction:
+Format of instruction: U
+Immediate Value: 16, RD: 0x5
+The operation is lui.
+fetching : 
+
+CYCLE NUMBER: 4
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 5
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xa00193 from address 0x4
+
+CYCLE NUMBER: 6
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 10, Operand1: 0x0, RD: 0x3
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 7
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 8
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x14b7 from address 0x8
+
+CYCLE NUMBER: 9
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 10
+Decode Instruction:
+Format of instruction: U
+Immediate Value: 1, RD: 0x9
+The operation is lui.
+fetching : 
+
+CYCLE NUMBER: 10
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 11
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2437 from address 0xc
+
+CYCLE NUMBER: 12
+WriteBack Instruction:
+Storing 65536 into 0x5
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: U
+Immediate Value: 2, RD: 0x8
+The operation is lui.
+fetching : 
+
+CYCLE NUMBER: 13
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 14
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x23b7 from address 0x10
+
+CYCLE NUMBER: 15
+WriteBack Instruction:
+Storing 10 into 0x3
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: U
+Immediate Value: 2, RD: 0x7
+The operation is lui.
+fetching : 
+
+CYCLE NUMBER: 16
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 17
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x513 from address 0x14
+
+CYCLE NUMBER: 18
+WriteBack Instruction:
+Storing 4096 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x0, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 19
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 20
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 21
+WriteBack Instruction:
+Storing 8192 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 0
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 22
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 23
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 24
+WriteBack Instruction:
+Storing 8192 into 0x7
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 25
+WriteBack Instruction:
+Storing 0 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 26
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 27
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 28
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 29
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 30
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 31
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 65536 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 32
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 33
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 34
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 999999and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 35
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 36
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 37
+WriteBack Instruction:
+Storing 65536 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 999999 and 1205862400
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 38
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 39
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 40
+WriteBack Instruction:
+Storing 1205862400 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 41
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 42
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 43
+WriteBack Instruction:
+Storing 1206862399 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 1206862399 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 44
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 45
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 46
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 1206862399 and 150857799
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 47
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 48
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 49
+WriteBack Instruction:
+Storing 150857799 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 1206862399and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 50
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 51
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 52
+WriteBack Instruction:
+Storing 1326623352 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 1326623352 and 2129929200
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 53
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 54
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 55
+WriteBack Instruction:
+Storing 2129929200 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 1326623352 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 56
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 57
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 58
+WriteBack Instruction:
+Storing 837192072 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 59
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 60
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 61
+WriteBack Instruction:
+Storing 1326623352 into 0x5
+Memory Instruction:
+Storing 837192072 into data memory: 4096 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 62
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 63
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 64
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 837192072 into data memory: 8192 
+x14=0
+Execute Instruction:
+Adding 8192 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 65
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 66
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 67
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4096 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 68
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 69
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 70
+WriteBack Instruction:
+Storing 8196 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 71
+WriteBack Instruction:
+Storing 4100 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 72
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 73
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 74
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 75
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 76
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 77
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 78
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 79
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2a1ce63 from address 0x24
+
+CYCLE NUMBER: 80
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 32 and -8
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 81
+WriteBack Instruction:
+Storing 1 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 82
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 83
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 84
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 85
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 86
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 87
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 88
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 89
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 90
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 91
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 92
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 1326623352 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 93
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 94
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 95
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 837192072and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 96
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 97
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 98
+WriteBack Instruction:
+Storing 1326623352 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 837192072 and 822083584
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 99
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 100
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 101
+WriteBack Instruction:
+Storing 822083584 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 102
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 103
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 104
+WriteBack Instruction:
+Storing 15108488 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 15108488 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 105
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 106
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 107
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 15108488 and 1888561
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 108
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 109
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 110
+WriteBack Instruction:
+Storing 1888561 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 15108488and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 111
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 112
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 113
+WriteBack Instruction:
+Storing 16406713 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 16406713 and 241735808
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 114
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 115
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 116
+WriteBack Instruction:
+Storing 241735808 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 16406713 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 117
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 118
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 119
+WriteBack Instruction:
+Storing 244498489 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 120
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 121
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 122
+WriteBack Instruction:
+Storing 16406713 into 0x5
+Memory Instruction:
+Storing 244498489 into data memory: 4100 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 123
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 124
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 125
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 244498489 into data memory: 8196 
+x14=0
+Execute Instruction:
+Adding 8196 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 126
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 127
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 128
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4100 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 129
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 130
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 131
+WriteBack Instruction:
+Storing 8200 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 132
+WriteBack Instruction:
+Storing 4104 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 133
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 134
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 135
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 136
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 137
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 138
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 1 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 139
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 140
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 141
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 142
+WriteBack Instruction:
+Storing 2 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 143
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 144
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 145
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 146
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 147
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 148
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 149
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 16406713 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 150
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 151
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 152
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 244498489and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 153
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 154
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 155
+WriteBack Instruction:
+Storing 16406713 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 244498489 and 119537664
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 156
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 157
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 158
+WriteBack Instruction:
+Storing 119537664 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 159
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 160
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 161
+WriteBack Instruction:
+Storing 162709561 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 162709561 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 162
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 163
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 164
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 162709561 and 20338695
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 165
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 166
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 167
+WriteBack Instruction:
+Storing 20338695 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 162709561and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 168
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 169
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 170
+WriteBack Instruction:
+Storing 142907454 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 142907454 and 2603352976
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 171
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 172
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 173
+WriteBack Instruction:
+Storing -1691614320 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 142907454 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 174
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 175
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 176
+WriteBack Instruction:
+Storing -1817666642 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 177
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 178
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 179
+WriteBack Instruction:
+Storing 142907454 into 0x5
+Memory Instruction:
+Storing 2477300654 into data memory: 4104 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 180
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 181
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 182
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 2477300654 into data memory: 8200 
+x14=0
+Execute Instruction:
+Adding 8200 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 183
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 184
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 185
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4104 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 186
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 187
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 188
+WriteBack Instruction:
+Storing 8204 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 189
+WriteBack Instruction:
+Storing 4108 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 190
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 191
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 192
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 193
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 194
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 195
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 2 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 196
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 197
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 198
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 199
+WriteBack Instruction:
+Storing 3 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 200
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 201
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 202
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 203
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 204
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 205
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 206
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 142907454 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 207
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 208
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 209
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 2477300654and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 210
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 211
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 212
+WriteBack Instruction:
+Storing 142907454 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2477300654 and 1975517184
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 213
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 214
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 215
+WriteBack Instruction:
+Storing 1975517184 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 216
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 217
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 218
+WriteBack Instruction:
+Storing -429352018 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 3865615278 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 219
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 220
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 221
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 3865615278 and 483201909
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 222
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 223
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 224
+WriteBack Instruction:
+Storing 483201909 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 3865615278and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 225
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 226
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 227
+WriteBack Instruction:
+Storing -89814821 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 4205152475 and 1720302304
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 228
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 229
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 230
+WriteBack Instruction:
+Storing 1720302304 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4205152475 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 231
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 232
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 233
+WriteBack Instruction:
+Storing -1674825157 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 234
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 235
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 236
+WriteBack Instruction:
+Storing -89814821 into 0x5
+Memory Instruction:
+Storing 2620142139 into data memory: 4108 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 237
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 238
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 239
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 2620142139 into data memory: 8204 
+x14=0
+Execute Instruction:
+Adding 8204 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 240
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 241
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 242
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4108 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 243
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 244
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 245
+WriteBack Instruction:
+Storing 8208 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 246
+WriteBack Instruction:
+Storing 4112 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 247
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 248
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 249
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 250
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 251
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 252
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 3 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 253
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 254
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 255
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 256
+WriteBack Instruction:
+Storing 4 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 257
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 258
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 259
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 260
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 261
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 262
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 263
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4205152475 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 264
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 265
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 266
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 2620142139and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 267
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 268
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 269
+WriteBack Instruction:
+Storing -89814821 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2620142139 and 1197473792
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 270
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 271
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 272
+WriteBack Instruction:
+Storing 1197473792 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 273
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 274
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 275
+WriteBack Instruction:
+Storing -615763397 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 3679203899 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 276
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 277
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 278
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 3679203899 and 459900487
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 279
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 280
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 281
+WriteBack Instruction:
+Storing 459900487 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 3679203899and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 282
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 283
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 284
+WriteBack Instruction:
+Storing -1071270788 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 3223696508 and 3032687536
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 285
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 286
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 287
+WriteBack Instruction:
+Storing -1262279760 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 3223696508 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 288
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 289
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 290
+WriteBack Instruction:
+Storing 1961269196 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 291
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 292
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 293
+WriteBack Instruction:
+Storing -1071270788 into 0x5
+Memory Instruction:
+Storing 1961269196 into data memory: 4112 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 294
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 295
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 296
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 1961269196 into data memory: 8208 
+x14=0
+Execute Instruction:
+Adding 8208 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 297
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 298
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 299
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4112 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 300
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 301
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 302
+WriteBack Instruction:
+Storing 8212 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 303
+WriteBack Instruction:
+Storing 4116 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 304
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 305
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 306
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 307
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 308
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 309
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 310
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 311
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 312
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 313
+WriteBack Instruction:
+Storing 5 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 314
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 315
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 316
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 317
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 318
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 319
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 320
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 3223696508 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 321
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 322
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 323
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 1961269196and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 324
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 325
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 326
+WriteBack Instruction:
+Storing -1071270788 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 1961269196 and 4185915392
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 327
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 328
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 329
+WriteBack Instruction:
+Storing -109051904 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 330
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 331
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 332
+WriteBack Instruction:
+Storing -1922656308 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 2372310988 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 333
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 334
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 335
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2372310988 and 296538873
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 336
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 337
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 338
+WriteBack Instruction:
+Storing 296538873 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 2372310988and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 339
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 340
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 341
+WriteBack Instruction:
+Storing -1664465611 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2630501685 and 3597237440
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 342
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 343
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 344
+WriteBack Instruction:
+Storing -697729856 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 2630501685 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 345
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 346
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 347
+WriteBack Instruction:
+Storing 1252211189 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 348
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 349
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 350
+WriteBack Instruction:
+Storing -1664465611 into 0x5
+Memory Instruction:
+Storing 1252211189 into data memory: 4116 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 351
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 352
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 353
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 1252211189 into data memory: 8212 
+x14=0
+Execute Instruction:
+Adding 8212 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 354
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 355
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 356
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4116 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 357
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 358
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 359
+WriteBack Instruction:
+Storing 8216 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 360
+WriteBack Instruction:
+Storing 4120 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 361
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 362
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 363
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 364
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 365
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 366
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 5 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 367
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 368
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 369
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 370
+WriteBack Instruction:
+Storing 6 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 371
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 372
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 373
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 374
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 375
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 376
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 377
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 2630501685 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 378
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 379
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 380
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 1252211189and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 381
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 382
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 383
+WriteBack Instruction:
+Storing -1664465611 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 1252211189 and 1050673152
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 384
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 385
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 386
+WriteBack Instruction:
+Storing 1050673152 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 387
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 388
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 389
+WriteBack Instruction:
+Storing 1946368501 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 1946368501 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 390
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 391
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 392
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 1946368501 and 243296062
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 393
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 394
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 395
+WriteBack Instruction:
+Storing 243296062 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 1946368501and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 396
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 397
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 398
+WriteBack Instruction:
+Storing 2055429835 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2055429835 and 1077124944
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 399
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 400
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 401
+WriteBack Instruction:
+Storing 1077124944 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 2055429835 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 402
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 403
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 404
+WriteBack Instruction:
+Storing 984662427 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 405
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 406
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 407
+WriteBack Instruction:
+Storing 2055429835 into 0x5
+Memory Instruction:
+Storing 984662427 into data memory: 4120 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 408
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 409
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 410
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 984662427 into data memory: 8216 
+x14=0
+Execute Instruction:
+Adding 8216 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 411
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 412
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 413
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4120 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 414
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 415
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 416
+WriteBack Instruction:
+Storing 8220 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 417
+WriteBack Instruction:
+Storing 4124 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 418
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 419
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 420
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 421
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 422
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 423
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 6 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 424
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 425
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 426
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 427
+WriteBack Instruction:
+Storing 7 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 428
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 429
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 430
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 431
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 432
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 433
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 434
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 2055429835 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 435
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 436
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 437
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 984662427and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 438
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 439
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 440
+WriteBack Instruction:
+Storing 2055429835 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 984662427 and 861929472
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 441
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 442
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 443
+WriteBack Instruction:
+Storing 861929472 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 444
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 445
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 446
+WriteBack Instruction:
+Storing 164675995 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 164675995 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 447
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 448
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 449
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 164675995 and 20584499
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 450
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 451
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 452
+WriteBack Instruction:
+Storing 20584499 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 164675995and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 453
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 454
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 455
+WriteBack Instruction:
+Storing 149608872 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 149608872 and 2634815920
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 456
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 457
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 458
+WriteBack Instruction:
+Storing -1660151376 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 149608872 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 459
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 460
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 461
+WriteBack Instruction:
+Storing -1780039656 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 462
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 463
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 464
+WriteBack Instruction:
+Storing 149608872 into 0x5
+Memory Instruction:
+Storing 2514927640 into data memory: 4124 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 465
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 466
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 467
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 2514927640 into data memory: 8220 
+x14=0
+Execute Instruction:
+Adding 8220 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 468
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 469
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 470
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4124 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 471
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 472
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 473
+WriteBack Instruction:
+Storing 8224 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 474
+WriteBack Instruction:
+Storing 4128 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 475
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 476
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 477
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 478
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 479
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 480
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 7 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 481
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 482
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 483
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 484
+WriteBack Instruction:
+Storing 8 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 485
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 486
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 487
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 488
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 489
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 490
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 491
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 149608872 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 492
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 493
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 494
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 2514927640and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 495
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 496
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 497
+WriteBack Instruction:
+Storing 149608872 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2514927640 and 50331648
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 498
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 499
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 500
+WriteBack Instruction:
+Storing 50331648 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 501
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 502
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 503
+WriteBack Instruction:
+Storing -1763262440 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 2531704856 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 504
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 505
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 506
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2531704856 and 316463107
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 507
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 508
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 509
+WriteBack Instruction:
+Storing 316463107 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 2531704856and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 510
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 511
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 512
+WriteBack Instruction:
+Storing -2076567525 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 2218399771 and 1852572032
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 513
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 514
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 515
+WriteBack Instruction:
+Storing 1852572032 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 2218399771 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 516
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 517
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 518
+WriteBack Instruction:
+Storing -363456101 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 519
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 520
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 521
+WriteBack Instruction:
+Storing -2076567525 into 0x5
+Memory Instruction:
+Storing 3931511195 into data memory: 4128 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 522
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 523
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 524
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 3931511195 into data memory: 8224 
+x14=0
+Execute Instruction:
+Adding 8224 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 525
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 526
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 527
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4128 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 528
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 529
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 530
+WriteBack Instruction:
+Storing 8228 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 531
+WriteBack Instruction:
+Storing 4132 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 532
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 533
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 534
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 535
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 536
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 537
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 8 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 538
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 539
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 540
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 24 and -8Already Predicted
+Decode Instruction:
+Format of instruction: J
+Immediate Value: 16, RD: 0x1
+The operation is jal.
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 541
+WriteBack Instruction:
+Storing 9 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 0 and 16
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 542
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jal.
+fetching : 
+
+CYCLE NUMBER: 543
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 544
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 545
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 546
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 547
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 548
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 2218399771 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 549
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 550
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 551
+WriteBack Instruction:
+Storing 28 into 0x1
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 3931511195and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 552
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 553
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 554
+WriteBack Instruction:
+Storing -2076567525 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 3931511195 and 861929472
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 555
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 556
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 557
+WriteBack Instruction:
+Storing 861929472 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 558
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 559
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 560
+WriteBack Instruction:
+Storing -650765925 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 3644201371 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 561
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 562
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 563
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 3644201371 and 455525171
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 564
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 565
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 566
+WriteBack Instruction:
+Storing 455525171 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 3644201371and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 567
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 568
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 569
+WriteBack Instruction:
+Storing -1039082840 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 3255884456 and 2472647088
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 570
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 571
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 572
+WriteBack Instruction:
+Storing -1822320208 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 3255884456 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 573
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 574
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 575
+WriteBack Instruction:
+Storing 1366377240 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 576
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 577
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 578
+WriteBack Instruction:
+Storing -1039082840 into 0x5
+Memory Instruction:
+Storing 1366377240 into data memory: 4132 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 579
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 580
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 581
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 1366377240 into data memory: 8228 
+x14=0
+Execute Instruction:
+Adding 8228 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 582
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 583
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 584
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4132 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 585
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 586
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 587
+WriteBack Instruction:
+Storing 8232 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 588
+WriteBack Instruction:
+Storing 4136 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 589
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 590
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 591
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 592
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 593
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 594
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 9 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+Branch predicted
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 595
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 596
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10000ef from address 0x18
+
+CYCLE NUMBER: 597
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 greater than and equal to operand2 then Adding 32 and 4Predicted Wrong!
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 598
+WriteBack Instruction:
+Storing 10 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 599
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 600
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2a1ce63 from address 0x24
+
+CYCLE NUMBER: 601
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: B
+Immediate Value: 60, Operand1: 0x3, Operand2: 0x10
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 602
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 603
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 604
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 greater than and equal to operand2 then Adding 40 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x5, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 605
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 606
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x1511213 from address 0x2c
+
+CYCLE NUMBER: 607
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 3255884456 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 21, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 608
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 609
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x30
+
+CYCLE NUMBER: 610
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 1366377240and21
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 611
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 612
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2300313 from address 0x34
+
+CYCLE NUMBER: 613
+WriteBack Instruction:
+Storing -1039082840 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 1366377240 and 1660944384
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 35, Operand1: 0x0, RD: 0x6
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 614
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 615
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x615233 from address 0x38
+
+CYCLE NUMBER: 616
+WriteBack Instruction:
+Storing 1660944384 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x6, RD: 0x4
+The operation is srl.
+fetching : 
+
+CYCLE NUMBER: 617
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 618
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x3c
+
+CYCLE NUMBER: 619
+WriteBack Instruction:
+Storing 846283544 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Right Logical 846283544 and 35
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 620
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 621
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x411213 from address 0x40
+
+CYCLE NUMBER: 622
+WriteBack Instruction:
+Storing 35 into 0x6
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 846283544 and 105785443
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x2, RD: 0x4
+The operation is slli.
+fetching : 
+
+CYCLE NUMBER: 623
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 624
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x414133 from address 0x44
+
+CYCLE NUMBER: 625
+WriteBack Instruction:
+Storing 105785443 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Shift Left 846283544and4
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x2, Operand2: 0x4, RD: 0x2
+The operation is xor.
+fetching : 
+
+CYCLE NUMBER: 626
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 627
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x10293 from address 0x48
+
+CYCLE NUMBER: 628
+WriteBack Instruction:
+Storing 876571515 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Bitwise XOR 876571515 and 655634816
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x2, RD: 0x5
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 629
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 630
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x24a023 from address 0x4c
+
+CYCLE NUMBER: 631
+WriteBack Instruction:
+Storing 655634816 into 0x4
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 876571515 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x9, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 632
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 633
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x242023 from address 0x50
+
+CYCLE NUMBER: 634
+WriteBack Instruction:
+Storing 321608443 into 0x2
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 9 and 0
+Decode Instruction:
+Format of instruction: S
+Immediate Value: 0, Operand1: 0x8, Operand2: 0x2
+The operation is sw.
+fetching : 
+
+CYCLE NUMBER: 635
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 636
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x440413 from address 0x54
+
+CYCLE NUMBER: 637
+WriteBack Instruction:
+Storing 876571515 into 0x5
+Memory Instruction:
+Storing 321608443 into data memory: 4136 
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8 and 0
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x8, RD: 0x8
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 638
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 639
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x448493 from address 0x58
+
+CYCLE NUMBER: 640
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Storing 321608443 into data memory: 8232 
+x14=0
+Execute Instruction:
+Adding 8232 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 4, Operand1: 0x9, RD: 0x9
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 641
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 642
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x8067 from address 0x5c
+
+CYCLE NUMBER: 643
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 4136 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x1, RD: 0x0
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 644
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 645
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 646
+WriteBack Instruction:
+Storing 8236 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by adding 28 and 0
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 647
+WriteBack Instruction:
+Storing 4140 into 0x9
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is jalr.
+fetching : 
+
+CYCLE NUMBER: 648
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 649
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x150513 from address 0x1c
+
+CYCLE NUMBER: 650
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 1, Operand1: 0x10, RD: 0x10
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 651
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 652
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xfe354ce3 from address 0x20
+
+CYCLE NUMBER: 653
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 10 and 1
+Decode Instruction:
+Format of instruction: B
+Immediate Value: -8, Operand1: 0x10, Operand2: 0x3
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 654
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 655
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x2a1ce63 from address 0x24
+
+CYCLE NUMBER: 656
+WriteBack Instruction:
+Storing 96 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 greater than and equal to operand2 then Adding 36 and 4
+Decode Instruction:
+Format of instruction: B
+Immediate Value: 60, Operand1: 0x3, Operand2: 0x10
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 657
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 658
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x28313 from address 0x28
+
+CYCLE NUMBER: 659
+WriteBack Instruction:
+Storing 11 into 0x10
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 36 and 60
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 660
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is blt.
+fetching : 
+
+CYCLE NUMBER: 661
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 662
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x693 from address 0x60
+
+CYCLE NUMBER: 663
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x0, RD: 0x13
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 664
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 665
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x700433 from address 0x64
+
+CYCLE NUMBER: 666
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 0
+Decode Instruction:
+Format of instruction: R
+Operand1: 0x0, Operand2: 0x7, RD: 0x8
+The operation is add.
+fetching : 
+
+CYCLE NUMBER: 667
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 668
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x436d063 from address 0x68
+
+CYCLE NUMBER: 669
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 8192
+Decode Instruction:
+Format of instruction: B
+Immediate Value: 64, Operand1: 0x13, Operand2: 0x3
+Branch predicted
+The operation is bge.
+fetching : 
+
+CYCLE NUMBER: 670
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 671
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0xef000011 from address 0xa8
+
+CYCLE NUMBER: 672
+WriteBack Instruction:
+Storing 0 into 0x13
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 104 and 4Predicted Wrong!
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is bge.
+fetching : 
+Branch Stall
+
+CYCLE NUMBER: 673
+WriteBack Instruction:
+Storing 8192 into 0x8
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: 0
+Error! No instruction found!
+The operation is bge.
+fetching : 
+
+CYCLE NUMBER: 674
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 675
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x593 from address 0x6c
+
+CYCLE NUMBER: 676
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x0, RD: 0x11
+The operation is addi.
+fetching : 
+
+CYCLE NUMBER: 677
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 678
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x235d663 from address 0x70
+
+CYCLE NUMBER: 679
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Adding 0 and 0
+Decode Instruction:
+Format of instruction: B
+Immediate Value: 44, Operand1: 0x11, Operand2: 0x3
+The operation is bge.
+fetching : 
+
+CYCLE NUMBER: 680
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 681
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x42703 from address 0x74
+
+CYCLE NUMBER: 682
+WriteBack Instruction:
+Storing 0 into 0x0
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+if operand1 less than operand2 then Adding 116 and 4
+Decode Instruction:
+Format of instruction: I
+Immediate Value: 0, Operand1: 0x8, RD: 0x14
+The operation is lw.
+fetching : 
+
+CYCLE NUMBER: 683
+Cache Stalled for 2 cycles
+fetching : 
+
+CYCLE NUMBER: 684
+Cache Stalled for 1 cycles
+fetching : 
+Fetch instruction : 0x442783 from address 0x78
+
+CYCLE NUMBER: 685
+WriteBack Instruction:
+Storing 0 into 0x11
+Memory Instruction:
+No Memory operation.
+x14=0
+Execute Instruction:
+Calculating net memory address by Adding 8192 and 0
+
+CYCLE NUMBER: 686
+WriteBack Instruction:
+No WriteBack Operation.
+Memory Instruction:
+Loading from data memory: 8192
+x14=0
+
+CYCLE NUMBER: 687
+WriteBack Instruction:
+Storing 837192072 into 0x14
+01
