@@ -824,7 +824,7 @@ void run_riscvsim()
         else{
             if (cycle_no<=4) {cycle_no++; rflag++;}
             int finish = cycle_no + 3 ; if (rflag==1) {cycle_no--; rflag--;}
-            if(DE.EX.Stall > 0){ finish++;
+            if(DE_EX.Stall > 0){ finish++;
                 while (finish != cycle_no)
                 { cout<<endl; cout << "CYCLE NUMBER: " <<dec << cycle_no << endl;
                     if (cycle_no < finish && cycle_no>4) {write_back(); T_inst++;}
