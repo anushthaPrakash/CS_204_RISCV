@@ -8,7 +8,7 @@
 <body>
     <br />
 <p align="center">
-    <img src="pics/logo.png" alt="Logo" width="580" height="200">
+    <img src="pics/logo_new.png" alt="Logo" width="580" height="200">
 
   <h3 align="center">RISC-V Simulator</h3>
 
